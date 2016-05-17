@@ -1,1 +1,9 @@
 C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\bin\Debug\Kinobuchungssystem.exe.config
+C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\bin\Debug\Kinobuchungssystem.exe
+C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\bin\Debug\Kinobuchungssystem.pdb
+C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.csprojResolveAssemblyReference.cache
+C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.Form1.resources
+C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.Properties.Resources.resources
+C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.csproj.GenerateResource.Cache
+C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.exe
+C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.pdb
