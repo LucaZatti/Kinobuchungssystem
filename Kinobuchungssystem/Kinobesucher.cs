@@ -8,10 +8,13 @@ namespace Kinobuchungssystem
 {
     public class Kinobesucher
     {
-        private int kinosaalnummer;
-        private int anzahlReihen;
-        private int anzahlPlaetze;
-        
+        private int telefonnummer;
+        private string vorname;
+        private string nachname;
 
+        public void verwaltenKinobesucher()
+        {
+
+        }
     }
 }
