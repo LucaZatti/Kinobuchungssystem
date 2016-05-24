@@ -8,6 +8,12 @@ namespace Kinobuchungssystem
 {
     public class Reihe
     {
+        private int reihennummer;
+        private int anzahlPlaetze;
 
+        public void findenReihe()
+        {
+
+        }
     }
 }
