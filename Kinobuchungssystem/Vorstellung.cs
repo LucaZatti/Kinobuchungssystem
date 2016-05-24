@@ -8,5 +8,23 @@ namespace Kinobuchungssystem
 {
     public class Vorstellung
     {
+        private int vorstellungsnummer;
+        private int saalnummer;
+        private string filmname;
+
+        public Vorstellung()
+        {
+
+        }
+
+        private void verwaltenVorstellung()
+        {
+
+        }
+
+        private void reservierenVorstellung()
+        {
+
+        }
     }
 }
