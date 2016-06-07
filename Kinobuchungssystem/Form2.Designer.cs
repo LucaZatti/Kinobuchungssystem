@@ -28,35 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.secondView_btn_reservieren = new System.Windows.Forms.Button();
+            this.secondView_btn_verwalten = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // secondView_btn_reservieren
             // 
-            this.button1.Location = new System.Drawing.Point(273, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Platz suchen";
-            this.button1.UseVisualStyleBackColor = true;
+            this.secondView_btn_reservieren.Location = new System.Drawing.Point(273, 90);
+            this.secondView_btn_reservieren.Name = "secondView_btn_reservieren";
+            this.secondView_btn_reservieren.Size = new System.Drawing.Size(97, 32);
+            this.secondView_btn_reservieren.TabIndex = 0;
+            this.secondView_btn_reservieren.Text = "Reservieren";
+            this.secondView_btn_reservieren.UseVisualStyleBackColor = true;
+            this.secondView_btn_reservieren.Click += new System.EventHandler(this.secondView_btn_reservieren_Click);
             // 
-            // button2
+            // secondView_btn_verwalten
             // 
-            this.button2.Location = new System.Drawing.Point(130, 90);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Vorstellung suchen";
-            this.button2.UseVisualStyleBackColor = true;
+            this.secondView_btn_verwalten.Location = new System.Drawing.Point(157, 90);
+            this.secondView_btn_verwalten.Name = "secondView_btn_verwalten";
+            this.secondView_btn_verwalten.Size = new System.Drawing.Size(110, 33);
+            this.secondView_btn_verwalten.TabIndex = 1;
+            this.secondView_btn_verwalten.Text = "Verwalten";
+            this.secondView_btn_verwalten.UseVisualStyleBackColor = true;
+            this.secondView_btn_verwalten.Click += new System.EventHandler(this.secondView_btn_verwalten_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 134);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.secondView_btn_verwalten);
+            this.Controls.Add(this.secondView_btn_reservieren);
             this.Name = "Form2";
             this.Text = "Kinoverwaltungssystem";
             this.ResumeLayout(false);
@@ -65,7 +67,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button secondView_btn_reservieren;
+        private System.Windows.Forms.Button secondView_btn_verwalten;
     }
 }

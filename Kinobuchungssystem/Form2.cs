@@ -16,5 +16,15 @@ namespace Kinobuchungssystem
         {
             InitializeComponent();
         }
+
+        private void secondView_btn_verwalten_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondView_btn_reservieren_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
