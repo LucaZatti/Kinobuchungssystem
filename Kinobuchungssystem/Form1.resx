@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="firstView_txt_Einleitung.Text" xml:space="preserve">
+    <value>Herzlich Willkommen zum Kinobuchungssystem der Kitag.
+Mit Hilfe von diesem Tool können Sie ganz einfach Ihren nächsten
+Besuch in unserem Kino buchen, reservieren oder stornieren.
+Suchen Sie sich mit Hilfe des Programms einen oder mehrere Plätze im 
+Kino, welche noch frei sind.
+</value>
+  </data>
 </root>

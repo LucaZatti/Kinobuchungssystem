@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.firstView_btn_Next = new System.Windows.Forms.Button();
             this.firstView_txt_Einleitung = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // firstView_btn_Next
             // 
-            this.firstView_btn_Next.Location = new System.Drawing.Point(370, 174);
+            this.firstView_btn_Next.Location = new System.Drawing.Point(385, 119);
             this.firstView_btn_Next.Name = "firstView_btn_Next";
             this.firstView_btn_Next.Size = new System.Drawing.Size(75, 23);
             this.firstView_btn_Next.TabIndex = 0;
@@ -46,15 +47,15 @@
             this.firstView_txt_Einleitung.AutoSize = true;
             this.firstView_txt_Einleitung.Location = new System.Drawing.Point(13, 13);
             this.firstView_txt_Einleitung.Name = "firstView_txt_Einleitung";
-            this.firstView_txt_Einleitung.Size = new System.Drawing.Size(371, 17);
+            this.firstView_txt_Einleitung.Size = new System.Drawing.Size(460, 85);
             this.firstView_txt_Einleitung.TabIndex = 1;
-            this.firstView_txt_Einleitung.Text = "Herzlich Willkommen zum Kinobuchungssystem der Kitag.\r\n";
+            this.firstView_txt_Einleitung.Text = resources.GetString("firstView_txt_Einleitung.Text");
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 209);
+            this.ClientSize = new System.Drawing.Size(472, 147);
             this.Controls.Add(this.firstView_txt_Einleitung);
             this.Controls.Add(this.firstView_btn_Next);
             this.Name = "Form1";
