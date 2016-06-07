@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+ *  Author: Luca Zatti
+ *  Date: 07.06.16 
+ *  Version: 1
+ *  Description: This class handles the first Form. It introduces the user, how he has to use this programm 
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,12 +24,15 @@ namespace Kinobuchungssystem
             InitializeComponent();
         }
 
+        //Press Button Next
         private void firstView_btn_Next_Click(object sender, EventArgs e)
         {
+            // create new instance of class NavigationForm
+            NavigationForm navigationForm = new NavigationForm();
             this.Hide();
-            NavigationForm form2 = new NavigationForm();
-            form2.Closed += (s, args) => this.Close();
-            form2.Show();
+            // close current form and open new one
+            navigationForm.Closed += (s, args) => this.Close();
+            navigationForm.Show();
         }
     }
 }
