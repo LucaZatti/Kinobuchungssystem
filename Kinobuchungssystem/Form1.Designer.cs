@@ -41,6 +41,7 @@
             this.firstView_btn_Next.TabIndex = 0;
             this.firstView_btn_Next.Text = "Next";
             this.firstView_btn_Next.UseVisualStyleBackColor = true;
+            this.firstView_btn_Next.Click += new System.EventHandler(this.firstView_btn_Next_Click);
             // 
             // firstView_txt_Einleitung
             // 
