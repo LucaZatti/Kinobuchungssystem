@@ -1,6 +1,6 @@
 ﻿namespace Kinobuchungssystem
 {
-    partial class Form3
+    partial class VerwaltenForm
     {
         /// <summary>
         /// Required designer variable.

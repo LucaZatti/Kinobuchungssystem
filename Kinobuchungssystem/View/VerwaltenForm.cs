@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Kinobuchungssystem
 {
-    public partial class Form2 : Form
+    public partial class VerwaltenForm : Form
     {
-        public Form2()
+        public VerwaltenForm()
         {
             InitializeComponent();
-        }
-
-        private void secondView_btn_verwalten_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void secondView_btn_reservieren_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

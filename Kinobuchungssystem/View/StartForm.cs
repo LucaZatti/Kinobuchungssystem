@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kinobuchungssystem
 {
-    public partial class Form1 : Form
+    public partial class StartForm : Form
     {
-        public Form1()
+        public StartForm()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace Kinobuchungssystem
         private void firstView_btn_Next_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 form2 = new Form2();
+            NavigationForm form2 = new NavigationForm();
             form2.Closed += (s, args) => this.Close();
             form2.Show();
         }
