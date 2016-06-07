@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**
+ *  Author: Luca Zatti
+ *  Date: 07.06.16 
+ *  Version: 1
+ *  Description: This class handles the NavigationForm. 
+ *  In this form you can choose between Vertwalten and Reservieren.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
