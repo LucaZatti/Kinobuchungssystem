@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReservierenForm));
             this.txt_Vorstellung = new System.Windows.Forms.Label();
             this.tb_Vorstellung = new System.Windows.Forms.TextBox();
             this.tb_AnzahlPlaetze = new System.Windows.Forms.TextBox();
@@ -194,6 +195,7 @@
             this.Controls.Add(this.tb_AnzahlPlaetze);
             this.Controls.Add(this.tb_Vorstellung);
             this.Controls.Add(this.txt_Vorstellung);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReservierenForm";
             this.Text = "Kinoverwaltungssystem";
             this.ResumeLayout(false);

@@ -52,14 +52,15 @@
             this.firstView_txt_Einleitung.TabIndex = 1;
             this.firstView_txt_Einleitung.Text = resources.GetString("firstView_txt_Einleitung.Text");
             // 
-            // Form1
+            // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 147);
             this.Controls.Add(this.firstView_txt_Einleitung);
             this.Controls.Add(this.firstView_btn_Next);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "StartForm";
             this.Text = "Kinoverwaltungssystem";
             this.ResumeLayout(false);
             this.PerformLayout();

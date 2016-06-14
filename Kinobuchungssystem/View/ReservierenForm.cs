@@ -27,7 +27,6 @@ namespace Kinobuchungssystem.View
             MessageBox.Show(vorstellung + anzahlPlaetze);
         }
 
-        //Press Button reservieren
         private void btn_Reservieren_Click(object sender, EventArgs e)
         {
             // get input text
