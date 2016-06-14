@@ -170,6 +170,7 @@
             this.btn_Reservieren.TabIndex = 14;
             this.btn_Reservieren.Text = "Reservieren";
             this.btn_Reservieren.UseVisualStyleBackColor = true;
+            this.btn_Reservieren.Click += new System.EventHandler(this.btn_Reservieren_Click);
             // 
             // ReservierenForm
             // 

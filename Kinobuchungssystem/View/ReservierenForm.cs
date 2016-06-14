@@ -25,6 +25,15 @@ namespace Kinobuchungssystem.View
             MessageBox.Show(vorstellung + anzahlPlaetze);
         }
 
+        private void btn_Reservieren_Click(object sender, EventArgs e)
+        {
+            string vorname = tb_Vorname.Text;
+            string nachname = tb_Nachname.Text;
+            int telefonnummer = int.Parse(tb_Telefonnummer.Text);
+
+            MessageBox.Show(vorname + " " + nachname + " " + telefonnummer);
+        }
+
         private void tb_AnzahlPlaetze_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
