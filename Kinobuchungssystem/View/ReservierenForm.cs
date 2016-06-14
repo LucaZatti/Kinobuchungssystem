@@ -20,7 +20,9 @@ namespace Kinobuchungssystem.View
         private void btn_Suchen_Click(object sender, EventArgs e)
         {
             string vorstellung = tb_Vorstellung.Text;
-            string anzahlPlaetze = tb_AnzahlPlaetze.Text;
+            int anzahlPlaetze = int.Parse(tb_AnzahlPlaetze.Text);
+
+            MessageBox.Show(vorstellung + anzahlPlaetze);
         }
 
         private void tb_AnzahlPlaetze_KeyPress(object sender, KeyPressEventArgs e)
