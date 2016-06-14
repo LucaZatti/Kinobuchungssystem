@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 183);
             this.Name = "VerwaltenForm";
-            this.Text = "Form3";
+            this.Text = "Kinoverwaltungssystem";
             this.ResumeLayout(false);
 
         }
