@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.secondView_btn_reservieren = new System.Windows.Forms.Button();
-            this.secondView_btn_verwalten = new System.Windows.Forms.Button();
+            this.NavigationForm_btn_reservieren = new System.Windows.Forms.Button();
+            this.NavigationForm_btn_verwalten = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // secondView_btn_reservieren
+            // NavigationForm_btn_reservieren
             // 
-            this.secondView_btn_reservieren.Location = new System.Drawing.Point(273, 90);
-            this.secondView_btn_reservieren.Name = "secondView_btn_reservieren";
-            this.secondView_btn_reservieren.Size = new System.Drawing.Size(97, 32);
-            this.secondView_btn_reservieren.TabIndex = 0;
-            this.secondView_btn_reservieren.Text = "Reservieren";
-            this.secondView_btn_reservieren.UseVisualStyleBackColor = true;
-            this.secondView_btn_reservieren.Click += new System.EventHandler(this.secondView_btn_reservieren_Click);
+            this.NavigationForm_btn_reservieren.Location = new System.Drawing.Point(273, 90);
+            this.NavigationForm_btn_reservieren.Name = "NavigationForm_btn_reservieren";
+            this.NavigationForm_btn_reservieren.Size = new System.Drawing.Size(97, 32);
+            this.NavigationForm_btn_reservieren.TabIndex = 0;
+            this.NavigationForm_btn_reservieren.Text = "Reservieren";
+            this.NavigationForm_btn_reservieren.UseVisualStyleBackColor = true;
+            this.NavigationForm_btn_reservieren.Click += new System.EventHandler(this.NavigationForm_btn_reservieren_Click);
             // 
-            // secondView_btn_verwalten
+            // NavigationForm_btn_verwalten
             // 
-            this.secondView_btn_verwalten.Location = new System.Drawing.Point(157, 90);
-            this.secondView_btn_verwalten.Name = "secondView_btn_verwalten";
-            this.secondView_btn_verwalten.Size = new System.Drawing.Size(110, 33);
-            this.secondView_btn_verwalten.TabIndex = 1;
-            this.secondView_btn_verwalten.Text = "Verwalten";
-            this.secondView_btn_verwalten.UseVisualStyleBackColor = true;
-            this.secondView_btn_verwalten.Click += new System.EventHandler(this.secondView_btn_verwalten_Click);
+            this.NavigationForm_btn_verwalten.Location = new System.Drawing.Point(157, 90);
+            this.NavigationForm_btn_verwalten.Name = "NavigationForm_btn_verwalten";
+            this.NavigationForm_btn_verwalten.Size = new System.Drawing.Size(110, 33);
+            this.NavigationForm_btn_verwalten.TabIndex = 1;
+            this.NavigationForm_btn_verwalten.Text = "Verwalten";
+            this.NavigationForm_btn_verwalten.UseVisualStyleBackColor = true;
+            this.NavigationForm_btn_verwalten.Click += new System.EventHandler(this.NavigationForm_btn_verwalten_Click);
             // 
             // label1
             // 
@@ -70,8 +70,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 134);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.secondView_btn_verwalten);
-            this.Controls.Add(this.secondView_btn_reservieren);
+            this.Controls.Add(this.NavigationForm_btn_verwalten);
+            this.Controls.Add(this.NavigationForm_btn_reservieren);
             this.Name = "NavigationForm";
             this.Text = "Kinoverwaltungssystem";
             this.ResumeLayout(false);
@@ -81,8 +81,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button secondView_btn_reservieren;
-        private System.Windows.Forms.Button secondView_btn_verwalten;
+        private System.Windows.Forms.Button NavigationForm_btn_reservieren;
+        private System.Windows.Forms.Button NavigationForm_btn_verwalten;
         private System.Windows.Forms.Label label1;
     }
 }
