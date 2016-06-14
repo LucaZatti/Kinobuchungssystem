@@ -67,6 +67,7 @@
             this.tb_AnzahlPlaetze.Name = "tb_AnzahlPlaetze";
             this.tb_AnzahlPlaetze.Size = new System.Drawing.Size(100, 22);
             this.tb_AnzahlPlaetze.TabIndex = 2;
+            this.tb_AnzahlPlaetze.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_AnzahlPlaetze_KeyPress);
             // 
             // txt_AnzahlPlaetze
             // 
@@ -79,12 +80,13 @@
             // 
             // btn_Suchen
             // 
-            this.btn_Suchen.Location = new System.Drawing.Point(241, 38);
+            this.btn_Suchen.Location = new System.Drawing.Point(249, 39);
             this.btn_Suchen.Name = "btn_Suchen";
             this.btn_Suchen.Size = new System.Drawing.Size(75, 23);
             this.btn_Suchen.TabIndex = 4;
             this.btn_Suchen.Text = "Suchen";
             this.btn_Suchen.UseVisualStyleBackColor = true;
+            this.btn_Suchen.Click += new System.EventHandler(this.btn_Suchen_Click);
             // 
             // cb_FreiePlaetze
             // 

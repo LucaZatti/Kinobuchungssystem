@@ -16,5 +16,25 @@ namespace Kinobuchungssystem.View
         {
             InitializeComponent();
         }
+
+        private void btn_Suchen_Click(object sender, EventArgs e)
+        {
+            string vorstellung = tb_Vorstellung.Text;
+            string anzahlPlaetze = tb_AnzahlPlaetze.Text;
+        }
+
+        private void tb_AnzahlPlaetze_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
