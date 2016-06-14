@@ -38,6 +38,17 @@ namespace Kinobuchungssystem.View
             MessageBox.Show(vorname + " " + nachname + " " + telefonnummer);
         }
 
+        // Press button zurück
+        private void btn_zurück_Click(object sender, EventArgs e)
+        {
+            // create new instance of class NavigationForm
+            NavigationForm navigationForm = new NavigationForm();
+            this.Hide();
+            // close current form and open new one
+            navigationForm.Closed += (s, args) => this.Close();
+            navigationForm.Show();
+        }
+
         // check input from user, if input is just nummeric
         private void tb_AnzahlPlaetze_KeyPress(object sender, KeyPressEventArgs e)
         {

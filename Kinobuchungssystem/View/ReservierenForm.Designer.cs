@@ -162,6 +162,7 @@
             this.btn_zurück.TabIndex = 13;
             this.btn_zurück.Text = "Zurück";
             this.btn_zurück.UseVisualStyleBackColor = true;
+            this.btn_zurück.Click += new System.EventHandler(this.btn_zurück_Click);
             // 
             // btn_Reservieren
             // 
