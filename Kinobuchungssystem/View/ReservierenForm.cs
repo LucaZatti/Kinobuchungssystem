@@ -17,16 +17,20 @@ namespace Kinobuchungssystem.View
             InitializeComponent();
         }
 
+        //Press Button Suchen
         private void btn_Suchen_Click(object sender, EventArgs e)
         {
+            // get input text 
             string vorstellung = tb_Vorstellung.Text;
             int anzahlPlaetze = int.Parse(tb_AnzahlPlaetze.Text);
 
             MessageBox.Show(vorstellung + anzahlPlaetze);
         }
 
+        //Press Button reservieren
         private void btn_Reservieren_Click(object sender, EventArgs e)
         {
+            // get input text
             string vorname = tb_Vorname.Text;
             string nachname = tb_Nachname.Text;
             int telefonnummer = int.Parse(tb_Telefonnummer.Text);
@@ -34,6 +38,7 @@ namespace Kinobuchungssystem.View
             MessageBox.Show(vorname + " " + nachname + " " + telefonnummer);
         }
 
+        // check input from user, if input is just nummeric
         private void tb_AnzahlPlaetze_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
@@ -48,6 +53,7 @@ namespace Kinobuchungssystem.View
             }
         }
 
+        // check input from user, if input is just nummeric
         private void tb_Telefonnummer_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
