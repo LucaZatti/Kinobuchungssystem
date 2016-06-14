@@ -152,6 +152,7 @@
             this.tb_Telefonnummer.Name = "tb_Telefonnummer";
             this.tb_Telefonnummer.Size = new System.Drawing.Size(100, 22);
             this.tb_Telefonnummer.TabIndex = 12;
+            this.tb_Telefonnummer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_Telefonnummer_KeyPress);
             // 
             // btn_zurück
             // 
