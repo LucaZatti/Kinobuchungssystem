@@ -46,7 +46,7 @@
             // 
             // NavigationForm_btn_verwalten
             // 
-            this.NavigationForm_btn_verwalten.Location = new System.Drawing.Point(157, 90);
+            this.NavigationForm_btn_verwalten.Location = new System.Drawing.Point(145, 89);
             this.NavigationForm_btn_verwalten.Name = "NavigationForm_btn_verwalten";
             this.NavigationForm_btn_verwalten.Size = new System.Drawing.Size(110, 33);
             this.NavigationForm_btn_verwalten.TabIndex = 1;
