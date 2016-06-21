@@ -25,6 +25,7 @@ namespace Kinobuchungssystem
             InitializeComponent();
             // disable buttons and textboxes
             btn_save.Enabled = false;
+            btn_suchenBenutzer.Enabled = false;
             tb_nachname.Enabled = false;
             tb_telefonnummer.Enabled = false;
             tb_vorname.Enabled = false;
@@ -38,7 +39,6 @@ namespace Kinobuchungssystem
             tb_telefonnummer.Enabled = true;
             tb_vorname.Enabled = true;
             string eingabe = btn_suchenBenutzer.Text;
-
         }
 
         private void btn_zurueck_Click(object sender, EventArgs e)
@@ -49,6 +49,12 @@ namespace Kinobuchungssystem
             // close current form and open new one
             navigationForm.Closed += (s, args) => this.Close();
             navigationForm.Show();
+        }
+
+        private void tb_suchenBenutzer_TextChanged(object sender, EventArgs e)
+        {
+            // check textbox if text is entered
+            btn_suchenBenutzer.Enabled = !string.IsNullOrWhiteSpace(this.tb_suchenBenutzer.Text);
         }
     }
 }

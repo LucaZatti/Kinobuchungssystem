@@ -151,6 +151,7 @@
             this.tb_suchenBenutzer.Name = "tb_suchenBenutzer";
             this.tb_suchenBenutzer.Size = new System.Drawing.Size(100, 22);
             this.tb_suchenBenutzer.TabIndex = 1;
+            this.tb_suchenBenutzer.TextChanged += new System.EventHandler(this.tb_suchenBenutzer_TextChanged);
             // 
             // btn_suchenBenutzer
             // 
