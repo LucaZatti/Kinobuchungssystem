@@ -27,9 +27,16 @@ namespace Kinobuchungssystem
             btn_saveBenutzer.Enabled = false;
             btn_suchenBenutzer.Enabled = false;
             btn_suchenFilm.Enabled = false;
+            btn_saveFilm.Enabled = false;
             tb_nachname.Enabled = false;
             tb_telefonnummerBenutzer.Enabled = false;
             tb_vorname.Enabled = false;
+            tb_altersfreigabeFilm.Enabled = false;
+            tb_beschreibungFilm.Enabled = false;
+            tb_dauerFilm.Enabled = false;
+            tb_nameFilm.Enabled = false;
+            tb_produzentFilm.Enabled = false;
+            tb_genreFilm.Enabled = false;
         }
 
         private void btn_suchenBenutzer_Click(object sender, EventArgs e)
@@ -74,7 +81,15 @@ namespace Kinobuchungssystem
 
         private void btn_suchenFilm_Click(object sender, EventArgs e)
         {
+            tb_altersfreigabeFilm.Enabled = true;
+            tb_beschreibungFilm.Enabled = true;
+            tb_dauerFilm.Enabled = true;
+            tb_genreFilm.Enabled = true;
+            tb_nameFilm.Enabled = true;
+            tb_produzentFilm.Enabled = true;
+            btn_saveFilm.Enabled = true;
             string eingabe = btn_suchenFilm.Text;
+
         }
 
         private void tb_suchenFilm_TextChanged(object sender, EventArgs e)

@@ -10,7 +10,7 @@ namespace Kinobuchungssystem
     {
         private int platznummer;
         private bool besetzt;
-        private string kinoBesucher;
+        private string telefonnummer;
 
         public void findenPlatz()
         {
@@ -26,5 +26,8 @@ namespace Kinobuchungssystem
         {
 
         }
+        public int Platznummer { get; set; }
+        public bool Besetzt { get; set; }
+        public string Telefonnummer { get; set; }
     }
 }

@@ -11,10 +11,11 @@ namespace Kinobuchungssystem
         private int kinosaalNummer;
         private int anzahlReihen;
         private int anzahlPlaetze;
+        private int[] reihen;
 
         public Kinosaal()
         {
-            
+
         }
 
         public void reservierenSaal()
@@ -31,5 +32,9 @@ namespace Kinobuchungssystem
         {
 
         }
+        public int KinosaalNummer { get; set; }
+        public int AnzahlReihen { get; set; }
+        public int AnzahlPlaetze { get; set; }
+        public int[] Reihen { get; set; }
     }
 }

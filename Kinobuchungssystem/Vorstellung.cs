@@ -12,6 +12,7 @@ namespace Kinobuchungssystem
         private int saalnummer;
         private string filmname;
 
+
         public Vorstellung()
         {
 
@@ -26,5 +27,8 @@ namespace Kinobuchungssystem
         {
 
         }
+        public int Vorstellungsnummer { get; set; }
+        public int Saalnummer { get; set; }
+        public string Filmname { get; set; }
     }
 }
