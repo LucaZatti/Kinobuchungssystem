@@ -24,19 +24,20 @@ namespace Kinobuchungssystem
         {
             InitializeComponent();
             // disable buttons and textboxes
-            btn_save.Enabled = false;
+            btn_saveBenutzer.Enabled = false;
             btn_suchenBenutzer.Enabled = false;
+            btn_suchenFilm.Enabled = false;
             tb_nachname.Enabled = false;
-            tb_telefonnummer.Enabled = false;
+            tb_telefonnummerBenutzer.Enabled = false;
             tb_vorname.Enabled = false;
         }
 
         private void btn_suchenBenutzer_Click(object sender, EventArgs e)
         {
             // enable buttons and textboxes
-            btn_save.Enabled = true;
+            btn_saveBenutzer.Enabled = true;
             tb_nachname.Enabled = true;
-            tb_telefonnummer.Enabled = true;
+            tb_telefonnummerBenutzer.Enabled = true;
             tb_vorname.Enabled = true;
             string eingabe = btn_suchenBenutzer.Text;
         }
@@ -69,6 +70,17 @@ namespace Kinobuchungssystem
             {
                 e.Handled = true;
             }
+        }
+
+        private void btn_suchenFilm_Click(object sender, EventArgs e)
+        {
+            string eingabe = btn_suchenFilm.Text;
+        }
+
+        private void tb_suchenFilm_TextChanged(object sender, EventArgs e)
+        {
+            // check textbox if text is entered
+            btn_suchenFilm.Enabled = !string.IsNullOrWhiteSpace(this.tb_suchenFilm.Text);
         }
     }
 }
