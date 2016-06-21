@@ -43,6 +43,7 @@
             this.btn_suchenBenutzer = new System.Windows.Forms.Button();
             this.Vorstellung = new System.Windows.Forms.TabPage();
             this.Film = new System.Windows.Forms.TabPage();
+            this.btn_zurueck = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Benutzer.SuspendLayout();
             this.SuspendLayout();
@@ -181,11 +182,22 @@
             this.Film.Text = "Film";
             this.Film.UseVisualStyleBackColor = true;
             // 
+            // btn_zurueck
+            // 
+            this.btn_zurueck.Location = new System.Drawing.Point(528, 221);
+            this.btn_zurueck.Name = "btn_zurueck";
+            this.btn_zurueck.Size = new System.Drawing.Size(75, 23);
+            this.btn_zurueck.TabIndex = 2;
+            this.btn_zurueck.Text = "Zurück";
+            this.btn_zurueck.UseVisualStyleBackColor = true;
+            this.btn_zurueck.Click += new System.EventHandler(this.btn_zurueck_Click);
+            // 
             // VerwaltenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 225);
+            this.ClientSize = new System.Drawing.Size(632, 255);
+            this.Controls.Add(this.btn_zurueck);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VerwaltenForm";
@@ -213,5 +225,6 @@
         private System.Windows.Forms.TextBox tb_telefonnummer;
         private System.Windows.Forms.TextBox tb_nachname;
         private System.Windows.Forms.TextBox tb_vorname;
+        private System.Windows.Forms.Button btn_zurueck;
     }
 }

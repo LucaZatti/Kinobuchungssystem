@@ -40,5 +40,15 @@ namespace Kinobuchungssystem
             string eingabe = btn_suchenBenutzer.Text;
 
         }
+
+        private void btn_zurueck_Click(object sender, EventArgs e)
+        {
+            // create new instance of class NavigationForm
+            NavigationForm navigationForm = new NavigationForm();
+            this.Hide();
+            // close current form and open new one
+            navigationForm.Closed += (s, args) => this.Close();
+            navigationForm.Show();
+        }
     }
 }
