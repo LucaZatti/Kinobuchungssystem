@@ -115,7 +115,7 @@
             // txt_telefonnummer
             // 
             this.txt_telefonnummer.AutoSize = true;
-            this.txt_telefonnummer.Location = new System.Drawing.Point(335, 97);
+            this.txt_telefonnummer.Location = new System.Drawing.Point(335, 75);
             this.txt_telefonnummer.Name = "txt_telefonnummer";
             this.txt_telefonnummer.Size = new System.Drawing.Size(111, 17);
             this.txt_telefonnummer.TabIndex = 9;
@@ -124,7 +124,7 @@
             // txt_nachnameBenutzer
             // 
             this.txt_nachnameBenutzer.AutoSize = true;
-            this.txt_nachnameBenutzer.Location = new System.Drawing.Point(335, 57);
+            this.txt_nachnameBenutzer.Location = new System.Drawing.Point(335, 47);
             this.txt_nachnameBenutzer.Name = "txt_nachnameBenutzer";
             this.txt_nachnameBenutzer.Size = new System.Drawing.Size(80, 17);
             this.txt_nachnameBenutzer.TabIndex = 8;
@@ -141,7 +141,7 @@
             // 
             // tb_telefonnummerBenutzer
             // 
-            this.tb_telefonnummerBenutzer.Location = new System.Drawing.Point(452, 94);
+            this.tb_telefonnummerBenutzer.Location = new System.Drawing.Point(488, 72);
             this.tb_telefonnummerBenutzer.Name = "tb_telefonnummerBenutzer";
             this.tb_telefonnummerBenutzer.Size = new System.Drawing.Size(100, 22);
             this.tb_telefonnummerBenutzer.TabIndex = 6;
@@ -149,21 +149,21 @@
             // 
             // tb_nachname
             // 
-            this.tb_nachname.Location = new System.Drawing.Point(452, 54);
+            this.tb_nachname.Location = new System.Drawing.Point(488, 44);
             this.tb_nachname.Name = "tb_nachname";
             this.tb_nachname.Size = new System.Drawing.Size(100, 22);
             this.tb_nachname.TabIndex = 5;
             // 
             // tb_vorname
             // 
-            this.tb_vorname.Location = new System.Drawing.Point(452, 16);
+            this.tb_vorname.Location = new System.Drawing.Point(488, 16);
             this.tb_vorname.Name = "tb_vorname";
             this.tb_vorname.Size = new System.Drawing.Size(100, 22);
             this.tb_vorname.TabIndex = 4;
             // 
             // btn_saveBenutzer
             // 
-            this.btn_saveBenutzer.Location = new System.Drawing.Point(477, 142);
+            this.btn_saveBenutzer.Location = new System.Drawing.Point(513, 247);
             this.btn_saveBenutzer.Name = "btn_saveBenutzer";
             this.btn_saveBenutzer.Size = new System.Drawing.Size(75, 23);
             this.btn_saveBenutzer.TabIndex = 3;
@@ -250,7 +250,7 @@
             // 
             // btn_saveFilm
             // 
-            this.btn_saveFilm.Location = new System.Drawing.Point(503, 247);
+            this.btn_saveFilm.Location = new System.Drawing.Point(513, 247);
             this.btn_saveFilm.Name = "btn_saveFilm";
             this.btn_saveFilm.Size = new System.Drawing.Size(75, 23);
             this.btn_saveFilm.TabIndex = 3;
@@ -259,7 +259,7 @@
             // 
             // tb_beschreibungFilm
             // 
-            this.tb_beschreibungFilm.Location = new System.Drawing.Point(424, 154);
+            this.tb_beschreibungFilm.Location = new System.Drawing.Point(430, 154);
             this.tb_beschreibungFilm.Multiline = true;
             this.tb_beschreibungFilm.Name = "tb_beschreibungFilm";
             this.tb_beschreibungFilm.Size = new System.Drawing.Size(158, 73);
@@ -267,35 +267,35 @@
             // 
             // tb_genreFilm
             // 
-            this.tb_genreFilm.Location = new System.Drawing.Point(424, 125);
+            this.tb_genreFilm.Location = new System.Drawing.Point(430, 125);
             this.tb_genreFilm.Name = "tb_genreFilm";
             this.tb_genreFilm.Size = new System.Drawing.Size(158, 22);
             this.tb_genreFilm.TabIndex = 16;
             // 
             // tb_produzentFilm
             // 
-            this.tb_produzentFilm.Location = new System.Drawing.Point(424, 97);
+            this.tb_produzentFilm.Location = new System.Drawing.Point(430, 97);
             this.tb_produzentFilm.Name = "tb_produzentFilm";
             this.tb_produzentFilm.Size = new System.Drawing.Size(158, 22);
             this.tb_produzentFilm.TabIndex = 15;
             // 
             // tb_altersfreigabeFilm
             // 
-            this.tb_altersfreigabeFilm.Location = new System.Drawing.Point(424, 69);
+            this.tb_altersfreigabeFilm.Location = new System.Drawing.Point(430, 69);
             this.tb_altersfreigabeFilm.Name = "tb_altersfreigabeFilm";
             this.tb_altersfreigabeFilm.Size = new System.Drawing.Size(158, 22);
             this.tb_altersfreigabeFilm.TabIndex = 14;
             // 
             // tb_dauerFilm
             // 
-            this.tb_dauerFilm.Location = new System.Drawing.Point(424, 41);
+            this.tb_dauerFilm.Location = new System.Drawing.Point(430, 41);
             this.tb_dauerFilm.Name = "tb_dauerFilm";
             this.tb_dauerFilm.Size = new System.Drawing.Size(158, 22);
             this.tb_dauerFilm.TabIndex = 13;
             // 
             // tb_nameFilm
             // 
-            this.tb_nameFilm.Location = new System.Drawing.Point(424, 10);
+            this.tb_nameFilm.Location = new System.Drawing.Point(430, 10);
             this.tb_nameFilm.Name = "tb_nameFilm";
             this.tb_nameFilm.Size = new System.Drawing.Size(158, 22);
             this.tb_nameFilm.TabIndex = 12;
@@ -406,6 +406,7 @@
             this.tb_suchenVorstellung.Name = "tb_suchenVorstellung";
             this.tb_suchenVorstellung.Size = new System.Drawing.Size(100, 22);
             this.tb_suchenVorstellung.TabIndex = 7;
+            this.tb_suchenVorstellung.TextChanged += new System.EventHandler(this.tb_suchenVorstellung_TextChanged);
             // 
             // btn_suchenVorstellung
             // 
@@ -415,6 +416,7 @@
             this.btn_suchenVorstellung.TabIndex = 6;
             this.btn_suchenVorstellung.Text = "Suchen";
             this.btn_suchenVorstellung.UseVisualStyleBackColor = true;
+            this.btn_suchenVorstellung.Click += new System.EventHandler(this.btn_suchenVorstellung_Click);
             // 
             // txt_vorstellungsnummer
             // 
@@ -506,7 +508,7 @@
             // 
             // btn_saveVorstellung
             // 
-            this.btn_saveVorstellung.Location = new System.Drawing.Point(513, 238);
+            this.btn_saveVorstellung.Location = new System.Drawing.Point(513, 247);
             this.btn_saveVorstellung.Name = "btn_saveVorstellung";
             this.btn_saveVorstellung.Size = new System.Drawing.Size(75, 23);
             this.btn_saveVorstellung.TabIndex = 3;

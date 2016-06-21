@@ -24,19 +24,32 @@ namespace Kinobuchungssystem
         {
             InitializeComponent();
             // disable buttons and textboxes
-            btn_saveBenutzer.Enabled = false;
-            btn_suchenBenutzer.Enabled = false;
+            // buttons and textboxes tab film
             btn_suchenFilm.Enabled = false;
             btn_saveFilm.Enabled = false;
-            tb_nachname.Enabled = false;
-            tb_telefonnummerBenutzer.Enabled = false;
-            tb_vorname.Enabled = false;
             tb_altersfreigabeFilm.Enabled = false;
             tb_beschreibungFilm.Enabled = false;
             tb_dauerFilm.Enabled = false;
             tb_nameFilm.Enabled = false;
             tb_produzentFilm.Enabled = false;
             tb_genreFilm.Enabled = false;
+            // end
+            // buttons and textboxes tab vorstellung
+            btn_saveVorstellung.Enabled = false;
+            btn_suchenVorstellung.Enabled = false;
+            tb_datumVorstellung.Enabled = false;
+            tb_filmVorstellung.Enabled = false;
+            tb_kinosaalVorstellung.Enabled = false;
+            tb_vorstellungsnummer.Enabled = false;
+            tb_zeitVorstellung.Enabled = false;
+            // end 
+            // buttons and textboxes tab benutzer
+            btn_saveBenutzer.Enabled = false;
+            btn_suchenBenutzer.Enabled = false;
+            tb_nachname.Enabled = false;
+            tb_telefonnummerBenutzer.Enabled = false;
+            tb_vorname.Enabled = false;
+            // end
         }
 
         private void btn_suchenBenutzer_Click(object sender, EventArgs e)
@@ -96,6 +109,22 @@ namespace Kinobuchungssystem
         {
             // check textbox if text is entered
             btn_suchenFilm.Enabled = !string.IsNullOrWhiteSpace(this.tb_suchenFilm.Text);
+        }
+
+        private void btn_suchenVorstellung_Click(object sender, EventArgs e)
+        {
+            string eingabe = tb_suchenVorstellung.Text;
+            tb_datumVorstellung.Enabled = true;
+            tb_filmVorstellung.Enabled = true;
+            tb_kinosaalVorstellung.Enabled = true;
+            tb_vorstellungsnummer.Enabled = true;
+            tb_zeitVorstellung.Enabled = true;
+        }
+
+        private void tb_suchenVorstellung_TextChanged(object sender, EventArgs e)
+        {
+            // check textbox if text is entered
+            btn_suchenVorstellung.Enabled = !string.IsNullOrWhiteSpace(this.tb_suchenVorstellung.Text);
         }
     }
 }
