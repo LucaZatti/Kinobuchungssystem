@@ -15,6 +15,8 @@ namespace Kinobuchungssystem.View
         public ReservierenForm()
         {
             InitializeComponent();
+            btn_Reservieren.Enabled = false;
+            btn_Suchen.Enabled = false;
         }
 
         //Press Button Suchen
@@ -35,6 +37,8 @@ namespace Kinobuchungssystem.View
             int telefonnummer = int.Parse(tb_Telefonnummer.Text);
 
             MessageBox.Show(vorname + " " + nachname + " " + telefonnummer);
+
+            
         }
 
         // Press button zurück

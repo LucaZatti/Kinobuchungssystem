@@ -112,6 +112,7 @@
             this.tb_telefonnummer.Name = "tb_telefonnummer";
             this.tb_telefonnummer.Size = new System.Drawing.Size(100, 22);
             this.tb_telefonnummer.TabIndex = 6;
+            this.tb_telefonnummer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_telefonnummer_KeyPress);
             // 
             // tb_nachname
             // 
