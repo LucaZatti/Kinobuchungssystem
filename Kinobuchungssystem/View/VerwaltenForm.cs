@@ -23,10 +23,20 @@ namespace Kinobuchungssystem
         public VerwaltenForm()
         {
             InitializeComponent();
+            // disable buttons and textboxes
+            btn_save.Enabled = false;
+            tb_nachname.Enabled = false;
+            tb_telefonnummer.Enabled = false;
+            tb_vorname.Enabled = false;
         }
 
         private void btn_suchenBenutzer_Click(object sender, EventArgs e)
         {
+            // enable buttons and textboxes
+            btn_save.Enabled = true;
+            tb_nachname.Enabled = true;
+            tb_telefonnummer.Enabled = true;
+            tb_vorname.Enabled = true;
             string eingabe = btn_suchenBenutzer.Text;
 
         }
