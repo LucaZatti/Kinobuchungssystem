@@ -60,8 +60,24 @@
             this.tb_suchenFilm = new System.Windows.Forms.TextBox();
             this.btn_suchenFilm = new System.Windows.Forms.Button();
             this.btn_zurueck = new System.Windows.Forms.Button();
+            this.lb_vorstellung = new System.Windows.Forms.ListBox();
+            this.tb_suchenVorstellung = new System.Windows.Forms.TextBox();
+            this.btn_suchenVorstellung = new System.Windows.Forms.Button();
+            this.txt_vorstellungsnummer = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_kinosaal = new System.Windows.Forms.Label();
+            this.txt_filmVorstellung = new System.Windows.Forms.Label();
+            this.txt_datumVorstellung = new System.Windows.Forms.Label();
+            this.txt_zeitVorstellung = new System.Windows.Forms.Label();
+            this.tb_vorstellungsnummer = new System.Windows.Forms.TextBox();
+            this.tb_kinosaalVorstellung = new System.Windows.Forms.TextBox();
+            this.tb_filmVorstellung = new System.Windows.Forms.TextBox();
+            this.tb_datumVorstellung = new System.Windows.Forms.TextBox();
+            this.tb_zeitVorstellung = new System.Windows.Forms.TextBox();
+            this.btn_saveVorstellung = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Benutzer.SuspendLayout();
+            this.Vorstellung.SuspendLayout();
             this.Film.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +107,7 @@
             this.Benutzer.Location = new System.Drawing.Point(4, 25);
             this.Benutzer.Name = "Benutzer";
             this.Benutzer.Padding = new System.Windows.Forms.Padding(3);
-            this.Benutzer.Size = new System.Drawing.Size(584, 276);
+            this.Benutzer.Size = new System.Drawing.Size(600, 276);
             this.Benutzer.TabIndex = 0;
             this.Benutzer.Text = "Benutzer";
             this.Benutzer.UseVisualStyleBackColor = true;
@@ -183,10 +199,25 @@
             // 
             // Vorstellung
             // 
+            this.Vorstellung.Controls.Add(this.btn_saveVorstellung);
+            this.Vorstellung.Controls.Add(this.tb_zeitVorstellung);
+            this.Vorstellung.Controls.Add(this.tb_datumVorstellung);
+            this.Vorstellung.Controls.Add(this.tb_filmVorstellung);
+            this.Vorstellung.Controls.Add(this.tb_kinosaalVorstellung);
+            this.Vorstellung.Controls.Add(this.tb_vorstellungsnummer);
+            this.Vorstellung.Controls.Add(this.txt_zeitVorstellung);
+            this.Vorstellung.Controls.Add(this.txt_datumVorstellung);
+            this.Vorstellung.Controls.Add(this.txt_filmVorstellung);
+            this.Vorstellung.Controls.Add(this.txt_kinosaal);
+            this.Vorstellung.Controls.Add(this.label1);
+            this.Vorstellung.Controls.Add(this.txt_vorstellungsnummer);
+            this.Vorstellung.Controls.Add(this.lb_vorstellung);
+            this.Vorstellung.Controls.Add(this.tb_suchenVorstellung);
+            this.Vorstellung.Controls.Add(this.btn_suchenVorstellung);
             this.Vorstellung.Location = new System.Drawing.Point(4, 25);
             this.Vorstellung.Name = "Vorstellung";
             this.Vorstellung.Padding = new System.Windows.Forms.Padding(3);
-            this.Vorstellung.Size = new System.Drawing.Size(584, 276);
+            this.Vorstellung.Size = new System.Drawing.Size(600, 276);
             this.Vorstellung.TabIndex = 1;
             this.Vorstellung.Text = "Vorstellung";
             this.Vorstellung.UseVisualStyleBackColor = true;
@@ -360,6 +391,128 @@
             this.btn_zurueck.UseVisualStyleBackColor = true;
             this.btn_zurueck.Click += new System.EventHandler(this.btn_zurueck_Click);
             // 
+            // lb_vorstellung
+            // 
+            this.lb_vorstellung.FormattingEnabled = true;
+            this.lb_vorstellung.ItemHeight = 16;
+            this.lb_vorstellung.Location = new System.Drawing.Point(21, 68);
+            this.lb_vorstellung.Name = "lb_vorstellung";
+            this.lb_vorstellung.Size = new System.Drawing.Size(217, 100);
+            this.lb_vorstellung.TabIndex = 8;
+            // 
+            // tb_suchenVorstellung
+            // 
+            this.tb_suchenVorstellung.Location = new System.Drawing.Point(21, 17);
+            this.tb_suchenVorstellung.Name = "tb_suchenVorstellung";
+            this.tb_suchenVorstellung.Size = new System.Drawing.Size(100, 22);
+            this.tb_suchenVorstellung.TabIndex = 7;
+            // 
+            // btn_suchenVorstellung
+            // 
+            this.btn_suchenVorstellung.Location = new System.Drawing.Point(164, 17);
+            this.btn_suchenVorstellung.Name = "btn_suchenVorstellung";
+            this.btn_suchenVorstellung.Size = new System.Drawing.Size(74, 22);
+            this.btn_suchenVorstellung.TabIndex = 6;
+            this.btn_suchenVorstellung.Text = "Suchen";
+            this.btn_suchenVorstellung.UseVisualStyleBackColor = true;
+            // 
+            // txt_vorstellungsnummer
+            // 
+            this.txt_vorstellungsnummer.AutoSize = true;
+            this.txt_vorstellungsnummer.Location = new System.Drawing.Point(341, 17);
+            this.txt_vorstellungsnummer.Name = "txt_vorstellungsnummer";
+            this.txt_vorstellungsnummer.Size = new System.Drawing.Size(141, 17);
+            this.txt_vorstellungsnummer.TabIndex = 9;
+            this.txt_vorstellungsnummer.Text = "Vorstellungsnummer:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(302, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.TabIndex = 10;
+            // 
+            // txt_kinosaal
+            // 
+            this.txt_kinosaal.AutoSize = true;
+            this.txt_kinosaal.Location = new System.Drawing.Point(341, 45);
+            this.txt_kinosaal.Name = "txt_kinosaal";
+            this.txt_kinosaal.Size = new System.Drawing.Size(66, 17);
+            this.txt_kinosaal.TabIndex = 11;
+            this.txt_kinosaal.Text = "Kinosaal:";
+            // 
+            // txt_filmVorstellung
+            // 
+            this.txt_filmVorstellung.AutoSize = true;
+            this.txt_filmVorstellung.Location = new System.Drawing.Point(341, 73);
+            this.txt_filmVorstellung.Name = "txt_filmVorstellung";
+            this.txt_filmVorstellung.Size = new System.Drawing.Size(37, 17);
+            this.txt_filmVorstellung.TabIndex = 12;
+            this.txt_filmVorstellung.Text = "Film:";
+            // 
+            // txt_datumVorstellung
+            // 
+            this.txt_datumVorstellung.AutoSize = true;
+            this.txt_datumVorstellung.Location = new System.Drawing.Point(341, 101);
+            this.txt_datumVorstellung.Name = "txt_datumVorstellung";
+            this.txt_datumVorstellung.Size = new System.Drawing.Size(53, 17);
+            this.txt_datumVorstellung.TabIndex = 13;
+            this.txt_datumVorstellung.Text = "Datum:";
+            // 
+            // txt_zeitVorstellung
+            // 
+            this.txt_zeitVorstellung.AutoSize = true;
+            this.txt_zeitVorstellung.Location = new System.Drawing.Point(341, 129);
+            this.txt_zeitVorstellung.Name = "txt_zeitVorstellung";
+            this.txt_zeitVorstellung.Size = new System.Drawing.Size(36, 17);
+            this.txt_zeitVorstellung.TabIndex = 14;
+            this.txt_zeitVorstellung.Text = "Zeit:";
+            // 
+            // tb_vorstellungsnummer
+            // 
+            this.tb_vorstellungsnummer.Location = new System.Drawing.Point(488, 14);
+            this.tb_vorstellungsnummer.Name = "tb_vorstellungsnummer";
+            this.tb_vorstellungsnummer.Size = new System.Drawing.Size(100, 22);
+            this.tb_vorstellungsnummer.TabIndex = 15;
+            // 
+            // tb_kinosaalVorstellung
+            // 
+            this.tb_kinosaalVorstellung.Location = new System.Drawing.Point(488, 42);
+            this.tb_kinosaalVorstellung.Name = "tb_kinosaalVorstellung";
+            this.tb_kinosaalVorstellung.Size = new System.Drawing.Size(100, 22);
+            this.tb_kinosaalVorstellung.TabIndex = 16;
+            // 
+            // tb_filmVorstellung
+            // 
+            this.tb_filmVorstellung.Location = new System.Drawing.Point(488, 70);
+            this.tb_filmVorstellung.Name = "tb_filmVorstellung";
+            this.tb_filmVorstellung.Size = new System.Drawing.Size(100, 22);
+            this.tb_filmVorstellung.TabIndex = 17;
+            // 
+            // tb_datumVorstellung
+            // 
+            this.tb_datumVorstellung.Location = new System.Drawing.Point(488, 98);
+            this.tb_datumVorstellung.Name = "tb_datumVorstellung";
+            this.tb_datumVorstellung.Size = new System.Drawing.Size(100, 22);
+            this.tb_datumVorstellung.TabIndex = 18;
+            // 
+            // tb_zeitVorstellung
+            // 
+            this.tb_zeitVorstellung.Location = new System.Drawing.Point(488, 126);
+            this.tb_zeitVorstellung.Name = "tb_zeitVorstellung";
+            this.tb_zeitVorstellung.Size = new System.Drawing.Size(100, 22);
+            this.tb_zeitVorstellung.TabIndex = 19;
+            // 
+            // btn_saveVorstellung
+            // 
+            this.btn_saveVorstellung.Location = new System.Drawing.Point(513, 238);
+            this.btn_saveVorstellung.Name = "btn_saveVorstellung";
+            this.btn_saveVorstellung.Size = new System.Drawing.Size(75, 23);
+            this.btn_saveVorstellung.TabIndex = 3;
+            this.btn_saveVorstellung.Text = "Save";
+            this.btn_saveVorstellung.UseVisualStyleBackColor = true;
+            // 
             // VerwaltenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -373,6 +526,8 @@
             this.tabControl1.ResumeLayout(false);
             this.Benutzer.ResumeLayout(false);
             this.Benutzer.PerformLayout();
+            this.Vorstellung.ResumeLayout(false);
+            this.Vorstellung.PerformLayout();
             this.Film.ResumeLayout(false);
             this.Film.PerformLayout();
             this.ResumeLayout(false);
@@ -412,5 +567,20 @@
         private System.Windows.Forms.Label txt_altersfreigabeFilm;
         private System.Windows.Forms.Label txt_dauerFilm;
         private System.Windows.Forms.Label txt_nameFilm;
+        private System.Windows.Forms.Button btn_saveVorstellung;
+        private System.Windows.Forms.TextBox tb_zeitVorstellung;
+        private System.Windows.Forms.TextBox tb_datumVorstellung;
+        private System.Windows.Forms.TextBox tb_filmVorstellung;
+        private System.Windows.Forms.TextBox tb_kinosaalVorstellung;
+        private System.Windows.Forms.TextBox tb_vorstellungsnummer;
+        private System.Windows.Forms.Label txt_zeitVorstellung;
+        private System.Windows.Forms.Label txt_datumVorstellung;
+        private System.Windows.Forms.Label txt_filmVorstellung;
+        private System.Windows.Forms.Label txt_kinosaal;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txt_vorstellungsnummer;
+        private System.Windows.Forms.ListBox lb_vorstellung;
+        private System.Windows.Forms.TextBox tb_suchenVorstellung;
+        private System.Windows.Forms.Button btn_suchenVorstellung;
     }
 }
