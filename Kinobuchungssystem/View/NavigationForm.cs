@@ -29,7 +29,11 @@ namespace Kinobuchungssystem
 
         private void NavigationForm_btn_verwalten_Click(object sender, EventArgs e)
         {
-
+            VerwaltenForm verwaltenForm = new VerwaltenForm();
+            this.Hide();
+            // close current form and open new one
+            verwaltenForm.Closed += (s, args) => this.Close();
+            verwaltenForm.Show();
         }
 
         private void NavigationForm_btn_reservieren_Click(object sender, EventArgs e)
