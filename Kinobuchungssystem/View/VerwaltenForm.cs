@@ -51,11 +51,11 @@ namespace Kinobuchungssystem
             tb_vorstellungZeit.Enabled = false;
             // end 
             // buttons and textboxes tab benutzer
-            btn_saveBenutzer.Enabled = false;
-            btn_suchenBenutzer.Enabled = false;
-            tb_nachname.Enabled = false;
-            tb_telefonnummerBenutzer.Enabled = false;
-            tb_vorname.Enabled = false;
+            btn_benutzerSave.Enabled = false;
+            btn_benutzerSuchen.Enabled = false;
+            tb_benutzerNachname.Enabled = false;
+            tb_benutzerTelefonnummerBenutzer.Enabled = false;
+            tb_benutzerVorname.Enabled = false;
             // end
         }
 
@@ -64,17 +64,17 @@ namespace Kinobuchungssystem
         private void btn_suchenBenutzer_Click(object sender, EventArgs e)
         {
             // enable buttons and textboxes
-            btn_saveBenutzer.Enabled = true;
-            tb_nachname.Enabled = true;
-            tb_telefonnummerBenutzer.Enabled = true;
-            tb_vorname.Enabled = true;
-            string eingabe = btn_suchenBenutzer.Text;
+            btn_benutzerSave.Enabled = true;
+            tb_benutzerNachname.Enabled = true;
+            tb_benutzerTelefonnummerBenutzer.Enabled = true;
+            tb_benutzerVorname.Enabled = true;
+            string eingabe = btn_benutzerSuchen.Text;
         }
 
         private void tb_suchenBenutzer_TextChanged(object sender, EventArgs e)
         {
             // check textbox if text is entered
-            btn_suchenBenutzer.Enabled = !string.IsNullOrWhiteSpace(this.tb_suchenBenutzer.Text);
+            btn_benutzerSuchen.Enabled = !string.IsNullOrWhiteSpace(this.tb_benutzerSuchen.Text);
         }
 
         private void tb_telefonnummer_KeyPress(object sender, KeyPressEventArgs e)
@@ -93,9 +93,9 @@ namespace Kinobuchungssystem
         
         private void btn_saveBenutzer_Click(object sender, EventArgs e)
         {
-            kinobesucher.Vorname = tb_vorname.Text;
-            kinobesucher.Nachname = tb_nachname.Text;
-            kinobesucher.Telefonnummer = Int32.Parse(tb_telefonnummerBenutzer.Text);
+            kinobesucher.Vorname = tb_benutzerVorname.Text;
+            kinobesucher.Nachname = tb_benutzerNachname.Text;
+            kinobesucher.Telefonnummer = Int32.Parse(tb_benutzerTelefonnummerBenutzer.Text);
         }
 
         //--------------------------------------------------------------------------------------------------------------------------

@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VerwaltenForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Benutzer = new System.Windows.Forms.TabPage();
-            this.txt_telefonnummer = new System.Windows.Forms.Label();
-            this.txt_nachnameBenutzer = new System.Windows.Forms.Label();
-            this.txt_vornameBenutzer = new System.Windows.Forms.Label();
-            this.tb_telefonnummerBenutzer = new System.Windows.Forms.TextBox();
-            this.tb_nachname = new System.Windows.Forms.TextBox();
-            this.tb_vorname = new System.Windows.Forms.TextBox();
-            this.btn_saveBenutzer = new System.Windows.Forms.Button();
+            this.txt_benutzerTelefonnummer = new System.Windows.Forms.Label();
+            this.txt_benutzerNachname = new System.Windows.Forms.Label();
+            this.txt_benutzerVorname = new System.Windows.Forms.Label();
+            this.tb_benutzerTelefonnummerBenutzer = new System.Windows.Forms.TextBox();
+            this.tb_benutzerNachname = new System.Windows.Forms.TextBox();
+            this.tb_benutzerVorname = new System.Windows.Forms.TextBox();
+            this.btn_benutzerSave = new System.Windows.Forms.Button();
             this.lb_benutzer = new System.Windows.Forms.ListBox();
-            this.tb_suchenBenutzer = new System.Windows.Forms.TextBox();
-            this.btn_suchenBenutzer = new System.Windows.Forms.Button();
+            this.tb_benutzerSuchen = new System.Windows.Forms.TextBox();
+            this.btn_benutzerSuchen = new System.Windows.Forms.Button();
             this.Vorstellung = new System.Windows.Forms.TabPage();
             this.btn_vorstellungSave = new System.Windows.Forms.Button();
             this.tb_vorstellungZeit = new System.Windows.Forms.TextBox();
@@ -94,16 +94,16 @@
             // 
             // Benutzer
             // 
-            this.Benutzer.Controls.Add(this.txt_telefonnummer);
-            this.Benutzer.Controls.Add(this.txt_nachnameBenutzer);
-            this.Benutzer.Controls.Add(this.txt_vornameBenutzer);
-            this.Benutzer.Controls.Add(this.tb_telefonnummerBenutzer);
-            this.Benutzer.Controls.Add(this.tb_nachname);
-            this.Benutzer.Controls.Add(this.tb_vorname);
-            this.Benutzer.Controls.Add(this.btn_saveBenutzer);
+            this.Benutzer.Controls.Add(this.txt_benutzerTelefonnummer);
+            this.Benutzer.Controls.Add(this.txt_benutzerNachname);
+            this.Benutzer.Controls.Add(this.txt_benutzerVorname);
+            this.Benutzer.Controls.Add(this.tb_benutzerTelefonnummerBenutzer);
+            this.Benutzer.Controls.Add(this.tb_benutzerNachname);
+            this.Benutzer.Controls.Add(this.tb_benutzerVorname);
+            this.Benutzer.Controls.Add(this.btn_benutzerSave);
             this.Benutzer.Controls.Add(this.lb_benutzer);
-            this.Benutzer.Controls.Add(this.tb_suchenBenutzer);
-            this.Benutzer.Controls.Add(this.btn_suchenBenutzer);
+            this.Benutzer.Controls.Add(this.tb_benutzerSuchen);
+            this.Benutzer.Controls.Add(this.btn_benutzerSuchen);
             this.Benutzer.Location = new System.Drawing.Point(4, 25);
             this.Benutzer.Name = "Benutzer";
             this.Benutzer.Padding = new System.Windows.Forms.Padding(3);
@@ -112,64 +112,64 @@
             this.Benutzer.Text = "Benutzer";
             this.Benutzer.UseVisualStyleBackColor = true;
             // 
-            // txt_telefonnummer
+            // txt_benutzerTelefonnummer
             // 
-            this.txt_telefonnummer.AutoSize = true;
-            this.txt_telefonnummer.Location = new System.Drawing.Point(335, 75);
-            this.txt_telefonnummer.Name = "txt_telefonnummer";
-            this.txt_telefonnummer.Size = new System.Drawing.Size(111, 17);
-            this.txt_telefonnummer.TabIndex = 9;
-            this.txt_telefonnummer.Text = "Telefonnummer:";
+            this.txt_benutzerTelefonnummer.AutoSize = true;
+            this.txt_benutzerTelefonnummer.Location = new System.Drawing.Point(335, 75);
+            this.txt_benutzerTelefonnummer.Name = "txt_benutzerTelefonnummer";
+            this.txt_benutzerTelefonnummer.Size = new System.Drawing.Size(111, 17);
+            this.txt_benutzerTelefonnummer.TabIndex = 9;
+            this.txt_benutzerTelefonnummer.Text = "Telefonnummer:";
             // 
-            // txt_nachnameBenutzer
+            // txt_benutzerNachname
             // 
-            this.txt_nachnameBenutzer.AutoSize = true;
-            this.txt_nachnameBenutzer.Location = new System.Drawing.Point(335, 47);
-            this.txt_nachnameBenutzer.Name = "txt_nachnameBenutzer";
-            this.txt_nachnameBenutzer.Size = new System.Drawing.Size(80, 17);
-            this.txt_nachnameBenutzer.TabIndex = 8;
-            this.txt_nachnameBenutzer.Text = "Nachname:";
+            this.txt_benutzerNachname.AutoSize = true;
+            this.txt_benutzerNachname.Location = new System.Drawing.Point(335, 47);
+            this.txt_benutzerNachname.Name = "txt_benutzerNachname";
+            this.txt_benutzerNachname.Size = new System.Drawing.Size(80, 17);
+            this.txt_benutzerNachname.TabIndex = 8;
+            this.txt_benutzerNachname.Text = "Nachname:";
             // 
-            // txt_vornameBenutzer
+            // txt_benutzerVorname
             // 
-            this.txt_vornameBenutzer.AutoSize = true;
-            this.txt_vornameBenutzer.Location = new System.Drawing.Point(335, 19);
-            this.txt_vornameBenutzer.Name = "txt_vornameBenutzer";
-            this.txt_vornameBenutzer.Size = new System.Drawing.Size(69, 17);
-            this.txt_vornameBenutzer.TabIndex = 7;
-            this.txt_vornameBenutzer.Text = "Vorname:";
+            this.txt_benutzerVorname.AutoSize = true;
+            this.txt_benutzerVorname.Location = new System.Drawing.Point(335, 19);
+            this.txt_benutzerVorname.Name = "txt_benutzerVorname";
+            this.txt_benutzerVorname.Size = new System.Drawing.Size(69, 17);
+            this.txt_benutzerVorname.TabIndex = 7;
+            this.txt_benutzerVorname.Text = "Vorname:";
             // 
-            // tb_telefonnummerBenutzer
+            // tb_benutzerTelefonnummerBenutzer
             // 
-            this.tb_telefonnummerBenutzer.Location = new System.Drawing.Point(488, 72);
-            this.tb_telefonnummerBenutzer.Name = "tb_telefonnummerBenutzer";
-            this.tb_telefonnummerBenutzer.Size = new System.Drawing.Size(100, 22);
-            this.tb_telefonnummerBenutzer.TabIndex = 6;
-            this.tb_telefonnummerBenutzer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_telefonnummer_KeyPress);
+            this.tb_benutzerTelefonnummerBenutzer.Location = new System.Drawing.Point(488, 72);
+            this.tb_benutzerTelefonnummerBenutzer.Name = "tb_benutzerTelefonnummerBenutzer";
+            this.tb_benutzerTelefonnummerBenutzer.Size = new System.Drawing.Size(100, 22);
+            this.tb_benutzerTelefonnummerBenutzer.TabIndex = 6;
+            this.tb_benutzerTelefonnummerBenutzer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_telefonnummer_KeyPress);
             // 
-            // tb_nachname
+            // tb_benutzerNachname
             // 
-            this.tb_nachname.Location = new System.Drawing.Point(488, 44);
-            this.tb_nachname.Name = "tb_nachname";
-            this.tb_nachname.Size = new System.Drawing.Size(100, 22);
-            this.tb_nachname.TabIndex = 5;
+            this.tb_benutzerNachname.Location = new System.Drawing.Point(488, 44);
+            this.tb_benutzerNachname.Name = "tb_benutzerNachname";
+            this.tb_benutzerNachname.Size = new System.Drawing.Size(100, 22);
+            this.tb_benutzerNachname.TabIndex = 5;
             // 
-            // tb_vorname
+            // tb_benutzerVorname
             // 
-            this.tb_vorname.Location = new System.Drawing.Point(488, 16);
-            this.tb_vorname.Name = "tb_vorname";
-            this.tb_vorname.Size = new System.Drawing.Size(100, 22);
-            this.tb_vorname.TabIndex = 4;
+            this.tb_benutzerVorname.Location = new System.Drawing.Point(488, 16);
+            this.tb_benutzerVorname.Name = "tb_benutzerVorname";
+            this.tb_benutzerVorname.Size = new System.Drawing.Size(100, 22);
+            this.tb_benutzerVorname.TabIndex = 4;
             // 
-            // btn_saveBenutzer
+            // btn_benutzerSave
             // 
-            this.btn_saveBenutzer.Location = new System.Drawing.Point(513, 247);
-            this.btn_saveBenutzer.Name = "btn_saveBenutzer";
-            this.btn_saveBenutzer.Size = new System.Drawing.Size(75, 23);
-            this.btn_saveBenutzer.TabIndex = 3;
-            this.btn_saveBenutzer.Text = "Save";
-            this.btn_saveBenutzer.UseVisualStyleBackColor = true;
-            this.btn_saveBenutzer.Click += new System.EventHandler(this.btn_saveBenutzer_Click);
+            this.btn_benutzerSave.Location = new System.Drawing.Point(513, 247);
+            this.btn_benutzerSave.Name = "btn_benutzerSave";
+            this.btn_benutzerSave.Size = new System.Drawing.Size(75, 23);
+            this.btn_benutzerSave.TabIndex = 3;
+            this.btn_benutzerSave.Text = "Save";
+            this.btn_benutzerSave.UseVisualStyleBackColor = true;
+            this.btn_benutzerSave.Click += new System.EventHandler(this.btn_saveBenutzer_Click);
             // 
             // lb_benutzer
             // 
@@ -180,23 +180,23 @@
             this.lb_benutzer.Size = new System.Drawing.Size(217, 100);
             this.lb_benutzer.TabIndex = 2;
             // 
-            // tb_suchenBenutzer
+            // tb_benutzerSuchen
             // 
-            this.tb_suchenBenutzer.Location = new System.Drawing.Point(15, 16);
-            this.tb_suchenBenutzer.Name = "tb_suchenBenutzer";
-            this.tb_suchenBenutzer.Size = new System.Drawing.Size(100, 22);
-            this.tb_suchenBenutzer.TabIndex = 1;
-            this.tb_suchenBenutzer.TextChanged += new System.EventHandler(this.tb_suchenBenutzer_TextChanged);
+            this.tb_benutzerSuchen.Location = new System.Drawing.Point(15, 16);
+            this.tb_benutzerSuchen.Name = "tb_benutzerSuchen";
+            this.tb_benutzerSuchen.Size = new System.Drawing.Size(100, 22);
+            this.tb_benutzerSuchen.TabIndex = 1;
+            this.tb_benutzerSuchen.TextChanged += new System.EventHandler(this.tb_suchenBenutzer_TextChanged);
             // 
-            // btn_suchenBenutzer
+            // btn_benutzerSuchen
             // 
-            this.btn_suchenBenutzer.Location = new System.Drawing.Point(158, 16);
-            this.btn_suchenBenutzer.Name = "btn_suchenBenutzer";
-            this.btn_suchenBenutzer.Size = new System.Drawing.Size(74, 22);
-            this.btn_suchenBenutzer.TabIndex = 0;
-            this.btn_suchenBenutzer.Text = "Suchen";
-            this.btn_suchenBenutzer.UseVisualStyleBackColor = true;
-            this.btn_suchenBenutzer.Click += new System.EventHandler(this.btn_suchenBenutzer_Click);
+            this.btn_benutzerSuchen.Location = new System.Drawing.Point(158, 16);
+            this.btn_benutzerSuchen.Name = "btn_benutzerSuchen";
+            this.btn_benutzerSuchen.Size = new System.Drawing.Size(74, 22);
+            this.btn_benutzerSuchen.TabIndex = 0;
+            this.btn_benutzerSuchen.Text = "Suchen";
+            this.btn_benutzerSuchen.UseVisualStyleBackColor = true;
+            this.btn_benutzerSuchen.Click += new System.EventHandler(this.btn_suchenBenutzer_Click);
             // 
             // Vorstellung
             // 
@@ -548,16 +548,16 @@
         private System.Windows.Forms.TabPage Film;
         private System.Windows.Forms.TabPage Vorstellung;
         private System.Windows.Forms.TabPage Benutzer;
-        private System.Windows.Forms.TextBox tb_suchenBenutzer;
-        private System.Windows.Forms.Button btn_suchenBenutzer;
-        private System.Windows.Forms.Button btn_saveBenutzer;
+        private System.Windows.Forms.TextBox tb_benutzerSuchen;
+        private System.Windows.Forms.Button btn_benutzerSuchen;
+        private System.Windows.Forms.Button btn_benutzerSave;
         private System.Windows.Forms.ListBox lb_benutzer;
-        private System.Windows.Forms.Label txt_telefonnummer;
-        private System.Windows.Forms.Label txt_nachnameBenutzer;
-        private System.Windows.Forms.Label txt_vornameBenutzer;
-        private System.Windows.Forms.TextBox tb_telefonnummerBenutzer;
-        private System.Windows.Forms.TextBox tb_nachname;
-        private System.Windows.Forms.TextBox tb_vorname;
+        private System.Windows.Forms.Label txt_benutzerTelefonnummer;
+        private System.Windows.Forms.Label txt_benutzerNachname;
+        private System.Windows.Forms.Label txt_benutzerVorname;
+        private System.Windows.Forms.TextBox tb_benutzerTelefonnummerBenutzer;
+        private System.Windows.Forms.TextBox tb_benutzerNachname;
+        private System.Windows.Forms.TextBox tb_benutzerVorname;
         private System.Windows.Forms.Button btn_zurueck;
         private System.Windows.Forms.ListBox lb_film;
         private System.Windows.Forms.TextBox tb_filmSuchen;
