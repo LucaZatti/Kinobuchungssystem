@@ -15,10 +15,11 @@ namespace Kinobuchungssystem
 {
     public class Vorstellung
     {
-        private int vorstellungsnummer;
-        private int saalnummer;
-        private string filmname;
-
+        public int Vorstellungsnummer { set; get; }
+        public int Saalnummer { set; get; }
+        public string Filmname { set; get; }
+        public string Datum { set; get; }
+        public string Zeit { set; get; }
 
         public Vorstellung()
         {
@@ -34,8 +35,6 @@ namespace Kinobuchungssystem
         {
 
         }
-        public int Vorstellungsnummer { get; set; }
-        public int Saalnummer { get; set; }
-        public string Filmname { get; set; }
+
     }
 }

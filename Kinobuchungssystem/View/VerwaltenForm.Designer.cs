@@ -230,6 +230,7 @@
             this.btn_saveVorstellung.TabIndex = 3;
             this.btn_saveVorstellung.Text = "Save";
             this.btn_saveVorstellung.UseVisualStyleBackColor = true;
+            this.btn_saveVorstellung.Click += new System.EventHandler(this.btn_saveVorstellung_Click);
             // 
             // tb_zeitVorstellung
             // 
@@ -258,6 +259,7 @@
             this.tb_kinosaalVorstellung.Name = "tb_kinosaalVorstellung";
             this.tb_kinosaalVorstellung.Size = new System.Drawing.Size(100, 22);
             this.tb_kinosaalVorstellung.TabIndex = 16;
+            this.tb_kinosaalVorstellung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_kinosaalVorstellung_KeyPress);
             // 
             // tb_vorstellungsnummer
             // 
@@ -265,6 +267,7 @@
             this.tb_vorstellungsnummer.Name = "tb_vorstellungsnummer";
             this.tb_vorstellungsnummer.Size = new System.Drawing.Size(100, 22);
             this.tb_vorstellungsnummer.TabIndex = 15;
+            this.tb_vorstellungsnummer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_vorstellungsnummer_KeyPress);
             // 
             // txt_zeitVorstellung
             // 

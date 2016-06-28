@@ -20,9 +20,13 @@ namespace Kinobuchungssystem
 {
     public partial class VerwaltenForm : Form
     {
+        // create instance of class
+        Vorstellung vorstellung = new Vorstellung();
         public VerwaltenForm()
         {
             InitializeComponent();
+            
+           
             // disable buttons and textboxes
             // buttons and textboxes tab film
             btn_suchenFilm.Enabled = false;
@@ -52,6 +56,7 @@ namespace Kinobuchungssystem
             // end
         }
 
+        
         private void btn_suchenBenutzer_Click(object sender, EventArgs e)
         {
             // enable buttons and textboxes
@@ -60,6 +65,8 @@ namespace Kinobuchungssystem
             tb_telefonnummerBenutzer.Enabled = true;
             tb_vorname.Enabled = true;
             string eingabe = btn_suchenBenutzer.Text;
+
+
         }
 
         private void btn_zurueck_Click(object sender, EventArgs e)
@@ -114,18 +121,58 @@ namespace Kinobuchungssystem
 
         private void btn_suchenVorstellung_Click(object sender, EventArgs e)
         {
-            string eingabe = tb_suchenVorstellung.Text;
             tb_datumVorstellung.Enabled = true;
             tb_filmVorstellung.Enabled = true;
             tb_kinosaalVorstellung.Enabled = true;
             tb_vorstellungsnummer.Enabled = true;
             tb_zeitVorstellung.Enabled = true;
+
+            vorstellung.Filmname = tb_suchenVorstellung.Text;
+            lb_vorstellung.Items.Add(vorstellung.Filmname);
         }
 
         private void tb_suchenVorstellung_TextChanged(object sender, EventArgs e)
         {
             // check textbox if text is entered
             btn_suchenVorstellung.Enabled = !string.IsNullOrWhiteSpace(this.tb_suchenVorstellung.Text);
+        }
+
+        private void btn_saveVorstellung_Click(object sender, EventArgs e)
+        {
+            // fill properties with new data
+            vorstellung.Datum = tb_datumVorstellung.Text;
+            vorstellung.Filmname = tb_filmVorstellung.Text;
+            vorstellung.Saalnummer = Int32.Parse(tb_kinosaalVorstellung.Text);
+            vorstellung.Vorstellungsnummer = Int32.Parse(tb_vorstellungsnummer.Text);
+            vorstellung.Zeit = tb_zeitVorstellung.Text;
+        }
+
+        private void tb_vorstellungsnummer_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tb_kinosaalVorstellung_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
