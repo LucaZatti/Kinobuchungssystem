@@ -22,6 +22,9 @@ namespace Kinobuchungssystem
     {
         // create instance of class
         Vorstellung vorstellung = new Vorstellung();
+        Film film = new Film();
+        Kinobesucher kinobesucher = new Kinobesucher();
+
         public VerwaltenForm()
         {
             InitializeComponent();
@@ -90,7 +93,9 @@ namespace Kinobuchungssystem
         
         private void btn_saveBenutzer_Click(object sender, EventArgs e)
         {
-
+            kinobesucher.Vorname = tb_vorname.Text;
+            kinobesucher.Nachname = tb_nachname.Text;
+            kinobesucher.Telefonnummer = Int32.Parse(tb_telefonnummerBenutzer.Text);
         }
 
         //--------------------------------------------------------------------------------------------------------------------------
@@ -100,7 +105,6 @@ namespace Kinobuchungssystem
             tb_altersfreigabeFilm.Enabled = true;
             tb_beschreibungFilm.Enabled = true;
             tb_dauerFilm.Enabled = true;
-
             tb_genreFilm.Enabled = true;
             tb_nameFilm.Enabled = true;
             tb_produzentFilm.Enabled = true;
@@ -116,6 +120,12 @@ namespace Kinobuchungssystem
 
         private void btn_saveFilm_Click(object sender, EventArgs e)
         {
+            film.Altersfreigabe = Int32.Parse(tb_altersfreigabeFilm.Text);
+            film.Beschreibung = tb_beschreibungFilm.Text;
+            film.Dauer = Int32.Parse(tb_dauerFilm.Text);
+            film.Genre = tb_genreFilm.Text;
+            film.Name = tb_nameFilm.Text;
+            film.Produzent = tb_produzentFilm.Text;
 
         }
 
