@@ -13,3 +13,4 @@ C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\D
 C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.StartForm.resources
 C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.NavigationForm.resources
 C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.VerwaltenForm.resources
+C:\Users\lucaz\Dropbox\Modul326\Code\Kinobuchungssystem\Kinobuchungssystem\obj\Debug\Kinobuchungssystem.View.NeuForm.resources

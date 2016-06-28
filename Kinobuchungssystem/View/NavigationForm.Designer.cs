@@ -32,6 +32,7 @@
             this.NavigationForm_btn_reservieren = new System.Windows.Forms.Button();
             this.NavigationForm_btn_verwalten = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_neu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NavigationForm_btn_reservieren
@@ -65,11 +66,22 @@
     "ren wollen.\r\nBetätigen Sie den richtigen Knopf und Sie werden \r\nweitergeleitet. " +
     "";
             // 
+            // btn_neu
+            // 
+            this.btn_neu.Location = new System.Drawing.Point(15, 89);
+            this.btn_neu.Name = "btn_neu";
+            this.btn_neu.Size = new System.Drawing.Size(110, 33);
+            this.btn_neu.TabIndex = 3;
+            this.btn_neu.Text = "Neu";
+            this.btn_neu.UseVisualStyleBackColor = true;
+            this.btn_neu.Click += new System.EventHandler(this.btn_neu_Click);
+            // 
             // NavigationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 134);
+            this.Controls.Add(this.btn_neu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NavigationForm_btn_verwalten);
             this.Controls.Add(this.NavigationForm_btn_reservieren);
@@ -87,5 +99,6 @@
         private System.Windows.Forms.Button NavigationForm_btn_reservieren;
         private System.Windows.Forms.Button NavigationForm_btn_verwalten;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_neu;
     }
 }

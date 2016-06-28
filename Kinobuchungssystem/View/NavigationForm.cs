@@ -45,5 +45,15 @@ namespace Kinobuchungssystem
             reservierenForm.Closed += (s, args) => this.Close();
             reservierenForm.Show();
         }
+
+        private void btn_neu_Click(object sender, EventArgs e)
+        {
+            // create new instance of class NavigationForm
+            NeuForm neuForm = new NeuForm();
+            this.Hide();
+            // close current form and open new one
+            neuForm.Closed += (s, args) => this.Close();
+            neuForm.Show();
+        }
     }
 }
