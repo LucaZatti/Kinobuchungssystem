@@ -61,6 +61,7 @@
             this.Controls.Add(this.firstView_btn_Next);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StartForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kinoverwaltungssystem";
             this.ResumeLayout(false);
             this.PerformLayout();

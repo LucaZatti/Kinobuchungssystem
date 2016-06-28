@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Film.cs" />
-    <Compile Include="View\Daten.cs" />
+    <Compile Include="Daten.cs" />
     <Compile Include="View\ReservierenForm.cs">
       <SubType>Form</SubType>
     </Compile>

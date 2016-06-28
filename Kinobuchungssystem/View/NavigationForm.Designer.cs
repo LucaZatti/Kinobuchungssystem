@@ -75,6 +75,7 @@
             this.Controls.Add(this.NavigationForm_btn_reservieren);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NavigationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kinoverwaltungssystem";
             this.ResumeLayout(false);
             this.PerformLayout();

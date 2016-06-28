@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+ *  Author: 
+ *  Date: 28.06.16 
+ *  Version: 1
+ *  Description: 
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

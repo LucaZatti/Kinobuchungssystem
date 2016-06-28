@@ -197,6 +197,7 @@
             this.Controls.Add(this.txt_Vorstellung);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReservierenForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kinoverwaltungssystem";
             this.ResumeLayout(false);
             this.PerformLayout();

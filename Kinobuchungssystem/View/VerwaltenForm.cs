@@ -97,6 +97,7 @@ namespace Kinobuchungssystem
             tb_altersfreigabeFilm.Enabled = true;
             tb_beschreibungFilm.Enabled = true;
             tb_dauerFilm.Enabled = true;
+
             tb_genreFilm.Enabled = true;
             tb_nameFilm.Enabled = true;
             tb_produzentFilm.Enabled = true;
