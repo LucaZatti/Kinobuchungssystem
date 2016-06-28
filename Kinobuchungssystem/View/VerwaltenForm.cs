@@ -56,7 +56,8 @@ namespace Kinobuchungssystem
             // end
         }
 
-        
+        //--------------------------------------------------------------------------------------------------------------------------
+        // handles everything int tab benutzer
         private void btn_suchenBenutzer_Click(object sender, EventArgs e)
         {
             // enable buttons and textboxes
@@ -65,18 +66,6 @@ namespace Kinobuchungssystem
             tb_telefonnummerBenutzer.Enabled = true;
             tb_vorname.Enabled = true;
             string eingabe = btn_suchenBenutzer.Text;
-
-
-        }
-
-        private void btn_zurueck_Click(object sender, EventArgs e)
-        {
-            // create new instance of class NavigationForm
-            NavigationForm navigationForm = new NavigationForm();
-            this.Hide();
-            // close current form and open new one
-            navigationForm.Closed += (s, args) => this.Close();
-            navigationForm.Show();
         }
 
         private void tb_suchenBenutzer_TextChanged(object sender, EventArgs e)
@@ -98,7 +87,14 @@ namespace Kinobuchungssystem
                 e.Handled = true;
             }
         }
+        
+        private void btn_saveBenutzer_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        //--------------------------------------------------------------------------------------------------------------------------
+        // handles everything in tab film
         private void btn_suchenFilm_Click(object sender, EventArgs e)
         {
             tb_altersfreigabeFilm.Enabled = true;
@@ -110,7 +106,6 @@ namespace Kinobuchungssystem
             tb_produzentFilm.Enabled = true;
             btn_saveFilm.Enabled = true;
             string eingabe = btn_suchenFilm.Text;
-
         }
 
         private void tb_suchenFilm_TextChanged(object sender, EventArgs e)
@@ -119,6 +114,13 @@ namespace Kinobuchungssystem
             btn_suchenFilm.Enabled = !string.IsNullOrWhiteSpace(this.tb_suchenFilm.Text);
         }
 
+        private void btn_saveFilm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //--------------------------------------------------------------------------------------------------------------------------
+        // handles everything in tab vorstellung
         private void btn_suchenVorstellung_Click(object sender, EventArgs e)
         {
             tb_datumVorstellung.Enabled = true;
@@ -173,6 +175,18 @@ namespace Kinobuchungssystem
             {
                 e.Handled = true;
             }
+        }
+
+        //--------------------------------------------------------------------------------------------------------------------------
+        // buttons in this form
+        private void btn_zurueck_Click(object sender, EventArgs e)
+        {
+            // create new instance of class NavigationForm
+            NavigationForm navigationForm = new NavigationForm();
+            this.Hide();
+            // close current form and open new one
+            navigationForm.Closed += (s, args) => this.Close();
+            navigationForm.Show();
         }
     }
 }

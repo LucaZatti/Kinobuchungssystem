@@ -169,6 +169,7 @@
             this.btn_saveBenutzer.TabIndex = 3;
             this.btn_saveBenutzer.Text = "Save";
             this.btn_saveBenutzer.UseVisualStyleBackColor = true;
+            this.btn_saveBenutzer.Click += new System.EventHandler(this.btn_saveBenutzer_Click);
             // 
             // lb_benutzer
             // 
@@ -383,6 +384,7 @@
             this.btn_saveFilm.TabIndex = 3;
             this.btn_saveFilm.Text = "Save";
             this.btn_saveFilm.UseVisualStyleBackColor = true;
+            this.btn_saveFilm.Click += new System.EventHandler(this.btn_saveFilm_Click);
             // 
             // tb_beschreibungFilm
             // 
