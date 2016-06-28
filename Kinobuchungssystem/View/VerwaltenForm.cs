@@ -42,13 +42,13 @@ namespace Kinobuchungssystem
             tb_filmGenre.Enabled = false;
             // end
             // buttons and textboxes tab vorstellung
-            btn_saveVorstellung.Enabled = false;
-            btn_suchenVorstellung.Enabled = false;
-            tb_datumVorstellung.Enabled = false;
-            tb_filmVorstellung.Enabled = false;
-            tb_kinosaalVorstellung.Enabled = false;
+            btn_vorstellungSave.Enabled = false;
+            btn_vorstellungSuchen.Enabled = false;
+            tb_vorstellungDatum.Enabled = false;
+            tb_vorstellungFilm.Enabled = false;
+            tb_vorstellungKinosaal.Enabled = false;
             tb_vorstellungsnummer.Enabled = false;
-            tb_zeitVorstellung.Enabled = false;
+            tb_vorstellungZeit.Enabled = false;
             // end 
             // buttons and textboxes tab benutzer
             btn_saveBenutzer.Enabled = false;
@@ -142,30 +142,30 @@ namespace Kinobuchungssystem
         // handles everything in tab vorstellung
         private void btn_suchenVorstellung_Click(object sender, EventArgs e)
         {
-            tb_datumVorstellung.Enabled = true;
-            tb_filmVorstellung.Enabled = true;
-            tb_kinosaalVorstellung.Enabled = true;
+            tb_vorstellungDatum.Enabled = true;
+            tb_vorstellungFilm.Enabled = true;
+            tb_vorstellungKinosaal.Enabled = true;
             tb_vorstellungsnummer.Enabled = true;
-            tb_zeitVorstellung.Enabled = true;
+            tb_vorstellungZeit.Enabled = true;
 
-            vorstellung.Filmname = tb_suchenVorstellung.Text;
+            vorstellung.Filmname = tb_vorstellungSuchen.Text;
             lb_vorstellung.Items.Add(vorstellung.Filmname);
         }
 
         private void tb_suchenVorstellung_TextChanged(object sender, EventArgs e)
         {
             // check textbox if text is entered
-            btn_suchenVorstellung.Enabled = !string.IsNullOrWhiteSpace(this.tb_suchenVorstellung.Text);
+            btn_vorstellungSuchen.Enabled = !string.IsNullOrWhiteSpace(this.tb_vorstellungSuchen.Text);
         }
 
         private void btn_saveVorstellung_Click(object sender, EventArgs e)
         {
             // fill properties with new data
-            vorstellung.Datum = tb_datumVorstellung.Text;
-            vorstellung.Filmname = tb_filmVorstellung.Text;
-            vorstellung.Saalnummer = Int32.Parse(tb_kinosaalVorstellung.Text);
+            vorstellung.Datum = tb_vorstellungDatum.Text;
+            vorstellung.Filmname = tb_vorstellungFilm.Text;
+            vorstellung.Saalnummer = Int32.Parse(tb_vorstellungKinosaal.Text);
             vorstellung.Vorstellungsnummer = Int32.Parse(tb_vorstellungsnummer.Text);
-            vorstellung.Zeit = tb_zeitVorstellung.Text;
+            vorstellung.Zeit = tb_vorstellungZeit.Text;
         }
 
         private void tb_vorstellungsnummer_KeyPress(object sender, KeyPressEventArgs e)
