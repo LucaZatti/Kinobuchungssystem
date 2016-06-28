@@ -58,22 +58,22 @@
             this.tb_suchenVorstellung = new System.Windows.Forms.TextBox();
             this.btn_suchenVorstellung = new System.Windows.Forms.Button();
             this.Film = new System.Windows.Forms.TabPage();
-            this.btn_saveFilm = new System.Windows.Forms.Button();
-            this.tb_beschreibungFilm = new System.Windows.Forms.TextBox();
-            this.tb_genreFilm = new System.Windows.Forms.TextBox();
-            this.tb_produzentFilm = new System.Windows.Forms.TextBox();
-            this.tb_altersfreigabeFilm = new System.Windows.Forms.TextBox();
-            this.tb_dauerFilm = new System.Windows.Forms.TextBox();
-            this.tb_nameFilm = new System.Windows.Forms.TextBox();
-            this.txt_beschreibungFilm = new System.Windows.Forms.Label();
-            this.txt_genreFilm = new System.Windows.Forms.Label();
-            this.txt_produzentFilm = new System.Windows.Forms.Label();
-            this.txt_altersfreigabeFilm = new System.Windows.Forms.Label();
-            this.txt_dauerFilm = new System.Windows.Forms.Label();
-            this.txt_nameFilm = new System.Windows.Forms.Label();
+            this.btn_filmSave = new System.Windows.Forms.Button();
+            this.tb_filmBeschreibung = new System.Windows.Forms.TextBox();
+            this.tb_filmGenre = new System.Windows.Forms.TextBox();
+            this.tb_filmProduzent = new System.Windows.Forms.TextBox();
+            this.tb_filmAltersfreigabe = new System.Windows.Forms.TextBox();
+            this.tb_filmDauer = new System.Windows.Forms.TextBox();
+            this.tb_filmName = new System.Windows.Forms.TextBox();
+            this.txt_filmBeschreibung = new System.Windows.Forms.Label();
+            this.txt_filmGenre = new System.Windows.Forms.Label();
+            this.txt_filmProduzent = new System.Windows.Forms.Label();
+            this.txt_filmAltersfreigabe = new System.Windows.Forms.Label();
+            this.txt_filmDauer = new System.Windows.Forms.Label();
+            this.txt_filmName = new System.Windows.Forms.Label();
             this.lb_film = new System.Windows.Forms.ListBox();
-            this.tb_suchenFilm = new System.Windows.Forms.TextBox();
-            this.btn_suchenFilm = new System.Windows.Forms.Button();
+            this.tb_filmSuchen = new System.Windows.Forms.TextBox();
+            this.btn_filmSuchen = new System.Windows.Forms.Button();
             this.btn_zurueck = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Benutzer.SuspendLayout();
@@ -352,22 +352,22 @@
             // 
             // Film
             // 
-            this.Film.Controls.Add(this.btn_saveFilm);
-            this.Film.Controls.Add(this.tb_beschreibungFilm);
-            this.Film.Controls.Add(this.tb_genreFilm);
-            this.Film.Controls.Add(this.tb_produzentFilm);
-            this.Film.Controls.Add(this.tb_altersfreigabeFilm);
-            this.Film.Controls.Add(this.tb_dauerFilm);
-            this.Film.Controls.Add(this.tb_nameFilm);
-            this.Film.Controls.Add(this.txt_beschreibungFilm);
-            this.Film.Controls.Add(this.txt_genreFilm);
-            this.Film.Controls.Add(this.txt_produzentFilm);
-            this.Film.Controls.Add(this.txt_altersfreigabeFilm);
-            this.Film.Controls.Add(this.txt_dauerFilm);
-            this.Film.Controls.Add(this.txt_nameFilm);
+            this.Film.Controls.Add(this.btn_filmSave);
+            this.Film.Controls.Add(this.tb_filmBeschreibung);
+            this.Film.Controls.Add(this.tb_filmGenre);
+            this.Film.Controls.Add(this.tb_filmProduzent);
+            this.Film.Controls.Add(this.tb_filmAltersfreigabe);
+            this.Film.Controls.Add(this.tb_filmDauer);
+            this.Film.Controls.Add(this.tb_filmName);
+            this.Film.Controls.Add(this.txt_filmBeschreibung);
+            this.Film.Controls.Add(this.txt_filmGenre);
+            this.Film.Controls.Add(this.txt_filmProduzent);
+            this.Film.Controls.Add(this.txt_filmAltersfreigabe);
+            this.Film.Controls.Add(this.txt_filmDauer);
+            this.Film.Controls.Add(this.txt_filmName);
             this.Film.Controls.Add(this.lb_film);
-            this.Film.Controls.Add(this.tb_suchenFilm);
-            this.Film.Controls.Add(this.btn_suchenFilm);
+            this.Film.Controls.Add(this.tb_filmSuchen);
+            this.Film.Controls.Add(this.btn_filmSuchen);
             this.Film.Location = new System.Drawing.Point(4, 25);
             this.Film.Name = "Film";
             this.Film.Padding = new System.Windows.Forms.Padding(3);
@@ -376,112 +376,112 @@
             this.Film.Text = "Film";
             this.Film.UseVisualStyleBackColor = true;
             // 
-            // btn_saveFilm
+            // btn_filmSave
             // 
-            this.btn_saveFilm.Location = new System.Drawing.Point(513, 247);
-            this.btn_saveFilm.Name = "btn_saveFilm";
-            this.btn_saveFilm.Size = new System.Drawing.Size(75, 23);
-            this.btn_saveFilm.TabIndex = 3;
-            this.btn_saveFilm.Text = "Save";
-            this.btn_saveFilm.UseVisualStyleBackColor = true;
-            this.btn_saveFilm.Click += new System.EventHandler(this.btn_saveFilm_Click);
+            this.btn_filmSave.Location = new System.Drawing.Point(513, 247);
+            this.btn_filmSave.Name = "btn_filmSave";
+            this.btn_filmSave.Size = new System.Drawing.Size(75, 23);
+            this.btn_filmSave.TabIndex = 3;
+            this.btn_filmSave.Text = "Save";
+            this.btn_filmSave.UseVisualStyleBackColor = true;
+            this.btn_filmSave.Click += new System.EventHandler(this.btn_saveFilm_Click);
             // 
-            // tb_beschreibungFilm
+            // tb_filmBeschreibung
             // 
-            this.tb_beschreibungFilm.Location = new System.Drawing.Point(430, 154);
-            this.tb_beschreibungFilm.Multiline = true;
-            this.tb_beschreibungFilm.Name = "tb_beschreibungFilm";
-            this.tb_beschreibungFilm.Size = new System.Drawing.Size(158, 73);
-            this.tb_beschreibungFilm.TabIndex = 17;
+            this.tb_filmBeschreibung.Location = new System.Drawing.Point(430, 154);
+            this.tb_filmBeschreibung.Multiline = true;
+            this.tb_filmBeschreibung.Name = "tb_filmBeschreibung";
+            this.tb_filmBeschreibung.Size = new System.Drawing.Size(158, 73);
+            this.tb_filmBeschreibung.TabIndex = 17;
             // 
-            // tb_genreFilm
+            // tb_filmGenre
             // 
-            this.tb_genreFilm.Location = new System.Drawing.Point(430, 125);
-            this.tb_genreFilm.Name = "tb_genreFilm";
-            this.tb_genreFilm.Size = new System.Drawing.Size(158, 22);
-            this.tb_genreFilm.TabIndex = 16;
+            this.tb_filmGenre.Location = new System.Drawing.Point(430, 125);
+            this.tb_filmGenre.Name = "tb_filmGenre";
+            this.tb_filmGenre.Size = new System.Drawing.Size(158, 22);
+            this.tb_filmGenre.TabIndex = 16;
             // 
-            // tb_produzentFilm
+            // tb_filmProduzent
             // 
-            this.tb_produzentFilm.Location = new System.Drawing.Point(430, 97);
-            this.tb_produzentFilm.Name = "tb_produzentFilm";
-            this.tb_produzentFilm.Size = new System.Drawing.Size(158, 22);
-            this.tb_produzentFilm.TabIndex = 15;
+            this.tb_filmProduzent.Location = new System.Drawing.Point(430, 97);
+            this.tb_filmProduzent.Name = "tb_filmProduzent";
+            this.tb_filmProduzent.Size = new System.Drawing.Size(158, 22);
+            this.tb_filmProduzent.TabIndex = 15;
             // 
-            // tb_altersfreigabeFilm
+            // tb_filmAltersfreigabe
             // 
-            this.tb_altersfreigabeFilm.Location = new System.Drawing.Point(430, 69);
-            this.tb_altersfreigabeFilm.Name = "tb_altersfreigabeFilm";
-            this.tb_altersfreigabeFilm.Size = new System.Drawing.Size(158, 22);
-            this.tb_altersfreigabeFilm.TabIndex = 14;
+            this.tb_filmAltersfreigabe.Location = new System.Drawing.Point(430, 69);
+            this.tb_filmAltersfreigabe.Name = "tb_filmAltersfreigabe";
+            this.tb_filmAltersfreigabe.Size = new System.Drawing.Size(158, 22);
+            this.tb_filmAltersfreigabe.TabIndex = 14;
             // 
-            // tb_dauerFilm
+            // tb_filmDauer
             // 
-            this.tb_dauerFilm.Location = new System.Drawing.Point(430, 41);
-            this.tb_dauerFilm.Name = "tb_dauerFilm";
-            this.tb_dauerFilm.Size = new System.Drawing.Size(158, 22);
-            this.tb_dauerFilm.TabIndex = 13;
+            this.tb_filmDauer.Location = new System.Drawing.Point(430, 41);
+            this.tb_filmDauer.Name = "tb_filmDauer";
+            this.tb_filmDauer.Size = new System.Drawing.Size(158, 22);
+            this.tb_filmDauer.TabIndex = 13;
             // 
-            // tb_nameFilm
+            // tb_filmName
             // 
-            this.tb_nameFilm.Location = new System.Drawing.Point(430, 10);
-            this.tb_nameFilm.Name = "tb_nameFilm";
-            this.tb_nameFilm.Size = new System.Drawing.Size(158, 22);
-            this.tb_nameFilm.TabIndex = 12;
+            this.tb_filmName.Location = new System.Drawing.Point(430, 10);
+            this.tb_filmName.Name = "tb_filmName";
+            this.tb_filmName.Size = new System.Drawing.Size(158, 22);
+            this.tb_filmName.TabIndex = 12;
             // 
-            // txt_beschreibungFilm
+            // txt_filmBeschreibung
             // 
-            this.txt_beschreibungFilm.AutoSize = true;
-            this.txt_beschreibungFilm.Location = new System.Drawing.Point(305, 157);
-            this.txt_beschreibungFilm.Name = "txt_beschreibungFilm";
-            this.txt_beschreibungFilm.Size = new System.Drawing.Size(99, 17);
-            this.txt_beschreibungFilm.TabIndex = 11;
-            this.txt_beschreibungFilm.Text = "Beschreibung:";
+            this.txt_filmBeschreibung.AutoSize = true;
+            this.txt_filmBeschreibung.Location = new System.Drawing.Point(305, 157);
+            this.txt_filmBeschreibung.Name = "txt_filmBeschreibung";
+            this.txt_filmBeschreibung.Size = new System.Drawing.Size(99, 17);
+            this.txt_filmBeschreibung.TabIndex = 11;
+            this.txt_filmBeschreibung.Text = "Beschreibung:";
             // 
-            // txt_genreFilm
+            // txt_filmGenre
             // 
-            this.txt_genreFilm.AutoSize = true;
-            this.txt_genreFilm.Location = new System.Drawing.Point(305, 128);
-            this.txt_genreFilm.Name = "txt_genreFilm";
-            this.txt_genreFilm.Size = new System.Drawing.Size(52, 17);
-            this.txt_genreFilm.TabIndex = 10;
-            this.txt_genreFilm.Text = "Genre:";
+            this.txt_filmGenre.AutoSize = true;
+            this.txt_filmGenre.Location = new System.Drawing.Point(305, 128);
+            this.txt_filmGenre.Name = "txt_filmGenre";
+            this.txt_filmGenre.Size = new System.Drawing.Size(52, 17);
+            this.txt_filmGenre.TabIndex = 10;
+            this.txt_filmGenre.Text = "Genre:";
             // 
-            // txt_produzentFilm
+            // txt_filmProduzent
             // 
-            this.txt_produzentFilm.AutoSize = true;
-            this.txt_produzentFilm.Location = new System.Drawing.Point(305, 100);
-            this.txt_produzentFilm.Name = "txt_produzentFilm";
-            this.txt_produzentFilm.Size = new System.Drawing.Size(77, 17);
-            this.txt_produzentFilm.TabIndex = 9;
-            this.txt_produzentFilm.Text = "Produzent:";
+            this.txt_filmProduzent.AutoSize = true;
+            this.txt_filmProduzent.Location = new System.Drawing.Point(305, 100);
+            this.txt_filmProduzent.Name = "txt_filmProduzent";
+            this.txt_filmProduzent.Size = new System.Drawing.Size(77, 17);
+            this.txt_filmProduzent.TabIndex = 9;
+            this.txt_filmProduzent.Text = "Produzent:";
             // 
-            // txt_altersfreigabeFilm
+            // txt_filmAltersfreigabe
             // 
-            this.txt_altersfreigabeFilm.AutoSize = true;
-            this.txt_altersfreigabeFilm.Location = new System.Drawing.Point(305, 72);
-            this.txt_altersfreigabeFilm.Name = "txt_altersfreigabeFilm";
-            this.txt_altersfreigabeFilm.Size = new System.Drawing.Size(100, 17);
-            this.txt_altersfreigabeFilm.TabIndex = 8;
-            this.txt_altersfreigabeFilm.Text = "Altersfreigabe:";
+            this.txt_filmAltersfreigabe.AutoSize = true;
+            this.txt_filmAltersfreigabe.Location = new System.Drawing.Point(305, 72);
+            this.txt_filmAltersfreigabe.Name = "txt_filmAltersfreigabe";
+            this.txt_filmAltersfreigabe.Size = new System.Drawing.Size(100, 17);
+            this.txt_filmAltersfreigabe.TabIndex = 8;
+            this.txt_filmAltersfreigabe.Text = "Altersfreigabe:";
             // 
-            // txt_dauerFilm
+            // txt_filmDauer
             // 
-            this.txt_dauerFilm.AutoSize = true;
-            this.txt_dauerFilm.Location = new System.Drawing.Point(305, 44);
-            this.txt_dauerFilm.Name = "txt_dauerFilm";
-            this.txt_dauerFilm.Size = new System.Drawing.Size(51, 17);
-            this.txt_dauerFilm.TabIndex = 7;
-            this.txt_dauerFilm.Text = "Dauer:";
+            this.txt_filmDauer.AutoSize = true;
+            this.txt_filmDauer.Location = new System.Drawing.Point(305, 44);
+            this.txt_filmDauer.Name = "txt_filmDauer";
+            this.txt_filmDauer.Size = new System.Drawing.Size(51, 17);
+            this.txt_filmDauer.TabIndex = 7;
+            this.txt_filmDauer.Text = "Dauer:";
             // 
-            // txt_nameFilm
+            // txt_filmName
             // 
-            this.txt_nameFilm.AutoSize = true;
-            this.txt_nameFilm.Location = new System.Drawing.Point(305, 13);
-            this.txt_nameFilm.Name = "txt_nameFilm";
-            this.txt_nameFilm.Size = new System.Drawing.Size(49, 17);
-            this.txt_nameFilm.TabIndex = 6;
-            this.txt_nameFilm.Text = "Name:";
+            this.txt_filmName.AutoSize = true;
+            this.txt_filmName.Location = new System.Drawing.Point(305, 13);
+            this.txt_filmName.Name = "txt_filmName";
+            this.txt_filmName.Size = new System.Drawing.Size(49, 17);
+            this.txt_filmName.TabIndex = 6;
+            this.txt_filmName.Text = "Name:";
             // 
             // lb_film
             // 
@@ -492,23 +492,23 @@
             this.lb_film.Size = new System.Drawing.Size(217, 100);
             this.lb_film.TabIndex = 5;
             // 
-            // tb_suchenFilm
+            // tb_filmSuchen
             // 
-            this.tb_suchenFilm.Location = new System.Drawing.Point(16, 13);
-            this.tb_suchenFilm.Name = "tb_suchenFilm";
-            this.tb_suchenFilm.Size = new System.Drawing.Size(100, 22);
-            this.tb_suchenFilm.TabIndex = 4;
-            this.tb_suchenFilm.TextChanged += new System.EventHandler(this.tb_suchenFilm_TextChanged);
+            this.tb_filmSuchen.Location = new System.Drawing.Point(16, 13);
+            this.tb_filmSuchen.Name = "tb_filmSuchen";
+            this.tb_filmSuchen.Size = new System.Drawing.Size(100, 22);
+            this.tb_filmSuchen.TabIndex = 4;
+            this.tb_filmSuchen.TextChanged += new System.EventHandler(this.tb_suchenFilm_TextChanged);
             // 
-            // btn_suchenFilm
+            // btn_filmSuchen
             // 
-            this.btn_suchenFilm.Location = new System.Drawing.Point(159, 13);
-            this.btn_suchenFilm.Name = "btn_suchenFilm";
-            this.btn_suchenFilm.Size = new System.Drawing.Size(74, 22);
-            this.btn_suchenFilm.TabIndex = 3;
-            this.btn_suchenFilm.Text = "Suchen";
-            this.btn_suchenFilm.UseVisualStyleBackColor = true;
-            this.btn_suchenFilm.Click += new System.EventHandler(this.btn_suchenFilm_Click);
+            this.btn_filmSuchen.Location = new System.Drawing.Point(159, 13);
+            this.btn_filmSuchen.Name = "btn_filmSuchen";
+            this.btn_filmSuchen.Size = new System.Drawing.Size(74, 22);
+            this.btn_filmSuchen.TabIndex = 3;
+            this.btn_filmSuchen.Text = "Suchen";
+            this.btn_filmSuchen.UseVisualStyleBackColor = true;
+            this.btn_filmSuchen.Click += new System.EventHandler(this.btn_suchenFilm_Click);
             // 
             // btn_zurueck
             // 
@@ -560,21 +560,21 @@
         private System.Windows.Forms.TextBox tb_vorname;
         private System.Windows.Forms.Button btn_zurueck;
         private System.Windows.Forms.ListBox lb_film;
-        private System.Windows.Forms.TextBox tb_suchenFilm;
-        private System.Windows.Forms.Button btn_suchenFilm;
-        private System.Windows.Forms.Button btn_saveFilm;
-        private System.Windows.Forms.TextBox tb_beschreibungFilm;
-        private System.Windows.Forms.TextBox tb_genreFilm;
-        private System.Windows.Forms.TextBox tb_produzentFilm;
-        private System.Windows.Forms.TextBox tb_altersfreigabeFilm;
-        private System.Windows.Forms.TextBox tb_dauerFilm;
-        private System.Windows.Forms.TextBox tb_nameFilm;
-        private System.Windows.Forms.Label txt_beschreibungFilm;
-        private System.Windows.Forms.Label txt_genreFilm;
-        private System.Windows.Forms.Label txt_produzentFilm;
-        private System.Windows.Forms.Label txt_altersfreigabeFilm;
-        private System.Windows.Forms.Label txt_dauerFilm;
-        private System.Windows.Forms.Label txt_nameFilm;
+        private System.Windows.Forms.TextBox tb_filmSuchen;
+        private System.Windows.Forms.Button btn_filmSuchen;
+        private System.Windows.Forms.Button btn_filmSave;
+        private System.Windows.Forms.TextBox tb_filmBeschreibung;
+        private System.Windows.Forms.TextBox tb_filmGenre;
+        private System.Windows.Forms.TextBox tb_filmProduzent;
+        private System.Windows.Forms.TextBox tb_filmAltersfreigabe;
+        private System.Windows.Forms.TextBox tb_filmDauer;
+        private System.Windows.Forms.TextBox tb_filmName;
+        private System.Windows.Forms.Label txt_filmBeschreibung;
+        private System.Windows.Forms.Label txt_filmGenre;
+        private System.Windows.Forms.Label txt_filmProduzent;
+        private System.Windows.Forms.Label txt_filmAltersfreigabe;
+        private System.Windows.Forms.Label txt_filmDauer;
+        private System.Windows.Forms.Label txt_filmName;
         private System.Windows.Forms.Button btn_saveVorstellung;
         private System.Windows.Forms.TextBox tb_zeitVorstellung;
         private System.Windows.Forms.TextBox tb_datumVorstellung;

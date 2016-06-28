@@ -32,14 +32,14 @@ namespace Kinobuchungssystem
            
             // disable buttons and textboxes
             // buttons and textboxes tab film
-            btn_suchenFilm.Enabled = false;
-            btn_saveFilm.Enabled = false;
-            tb_altersfreigabeFilm.Enabled = false;
-            tb_beschreibungFilm.Enabled = false;
-            tb_dauerFilm.Enabled = false;
-            tb_nameFilm.Enabled = false;
-            tb_produzentFilm.Enabled = false;
-            tb_genreFilm.Enabled = false;
+            btn_filmSuchen.Enabled = false;
+            btn_filmSave.Enabled = false;
+            tb_filmAltersfreigabe.Enabled = false;
+            tb_filmBeschreibung.Enabled = false;
+            tb_filmDauer.Enabled = false;
+            tb_filmName.Enabled = false;
+            tb_filmProduzent.Enabled = false;
+            tb_filmGenre.Enabled = false;
             // end
             // buttons and textboxes tab vorstellung
             btn_saveVorstellung.Enabled = false;
@@ -102,40 +102,40 @@ namespace Kinobuchungssystem
         // handles everything in tab film
         private void btn_suchenFilm_Click(object sender, EventArgs e)
         {
-            tb_altersfreigabeFilm.Enabled = true;
-            tb_beschreibungFilm.Enabled = true;
-            tb_dauerFilm.Enabled = true;
-            tb_genreFilm.Enabled = true;
-            tb_nameFilm.Enabled = true;
-            tb_produzentFilm.Enabled = true;
-            btn_saveFilm.Enabled = true;
-            film.Name = btn_suchenFilm.Text;
+            tb_filmAltersfreigabe.Enabled = true;
+            tb_filmBeschreibung.Enabled = true;
+            tb_filmDauer.Enabled = true;
+            tb_filmGenre.Enabled = true;
+            tb_filmName.Enabled = true;
+            tb_filmProduzent.Enabled = true;
+            btn_filmSave.Enabled = true;
+            film.Name = btn_filmSuchen.Text;
             lb_film.Items.Add(film.Name);
-            tb_suchenFilm.Text = "";
+            tb_filmSuchen.Text = "";
         }
 
         private void tb_suchenFilm_TextChanged(object sender, EventArgs e)
         {
             // check textbox if text is entered
-            btn_suchenFilm.Enabled = !string.IsNullOrWhiteSpace(this.tb_suchenFilm.Text);
+            btn_filmSuchen.Enabled = !string.IsNullOrWhiteSpace(this.tb_filmSuchen.Text);
         }
 
         private void btn_saveFilm_Click(object sender, EventArgs e)
         {
-            film.Altersfreigabe = Int32.Parse(tb_altersfreigabeFilm.Text);
-            film.Beschreibung = tb_beschreibungFilm.Text;
-            film.Dauer = Int32.Parse(tb_dauerFilm.Text);
-            film.Genre = tb_genreFilm.Text;
-            film.Name = tb_nameFilm.Text;
-            film.Produzent = tb_produzentFilm.Text;
+            film.Altersfreigabe = Int32.Parse(tb_filmAltersfreigabe.Text);
+            film.Beschreibung = tb_filmBeschreibung.Text;
+            film.Dauer = Int32.Parse(tb_filmDauer.Text);
+            film.Genre = tb_filmGenre.Text;
+            film.Name = tb_filmName.Text;
+            film.Produzent = tb_filmProduzent.Text;
 
             // clear all textboxes in form
-            tb_altersfreigabeFilm.Text = "";
-            tb_beschreibungFilm.Text = "";
-            tb_dauerFilm.Text = "";
-            tb_genreFilm.Text = "";
-            tb_nameFilm.Text = "";
-            tb_produzentFilm.Text = "";
+            tb_filmAltersfreigabe.Text = "";
+            tb_filmBeschreibung.Text = "";
+            tb_filmDauer.Text = "";
+            tb_filmGenre.Text = "";
+            tb_filmName.Text = "";
+            tb_filmProduzent.Text = "";
         }
 
         //--------------------------------------------------------------------------------------------------------------------------
