@@ -109,7 +109,9 @@ namespace Kinobuchungssystem
             tb_nameFilm.Enabled = true;
             tb_produzentFilm.Enabled = true;
             btn_saveFilm.Enabled = true;
-            string eingabe = btn_suchenFilm.Text;
+            film.Name = btn_suchenFilm.Text;
+            lb_film.Items.Add(film.Name);
+            tb_suchenFilm.Text = "";
         }
 
         private void tb_suchenFilm_TextChanged(object sender, EventArgs e)
@@ -127,6 +129,13 @@ namespace Kinobuchungssystem
             film.Name = tb_nameFilm.Text;
             film.Produzent = tb_produzentFilm.Text;
 
+            // clear all textboxes in form
+            tb_altersfreigabeFilm.Text = "";
+            tb_beschreibungFilm.Text = "";
+            tb_dauerFilm.Text = "";
+            tb_genreFilm.Text = "";
+            tb_nameFilm.Text = "";
+            tb_produzentFilm.Text = "";
         }
 
         //--------------------------------------------------------------------------------------------------------------------------
