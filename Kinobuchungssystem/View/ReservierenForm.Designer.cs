@@ -61,6 +61,7 @@
             this.tb_Vorstellung.Name = "tb_Vorstellung";
             this.tb_Vorstellung.Size = new System.Drawing.Size(100, 22);
             this.tb_Vorstellung.TabIndex = 1;
+            this.tb_Vorstellung.TextChanged += new System.EventHandler(this.tb_Vorstellung_TextChanged);
             // 
             // tb_AnzahlPlaetze
             // 
@@ -68,6 +69,7 @@
             this.tb_AnzahlPlaetze.Name = "tb_AnzahlPlaetze";
             this.tb_AnzahlPlaetze.Size = new System.Drawing.Size(100, 22);
             this.tb_AnzahlPlaetze.TabIndex = 2;
+            this.tb_AnzahlPlaetze.TextChanged += new System.EventHandler(this.tb_AnzahlPlaetze_TextChanged);
             this.tb_AnzahlPlaetze.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_AnzahlPlaetze_KeyPress);
             // 
             // txt_AnzahlPlaetze

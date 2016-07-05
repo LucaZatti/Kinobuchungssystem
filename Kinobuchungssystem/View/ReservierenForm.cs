@@ -17,11 +17,13 @@ namespace Kinobuchungssystem.View
             InitializeComponent();
             btn_Reservieren.Enabled = false;
             btn_Suchen.Enabled = false;
+            cb_FreiePlaetze.Enabled = false;
         }
 
         //Press Button Suchen
         private void btn_Suchen_Click(object sender, EventArgs e)
         {
+            cb_FreiePlaetze.Enabled = true;
             // get input text 
             string vorstellung = tb_Vorstellung.Text;
             int anzahlPlaetze = int.Parse(tb_AnzahlPlaetze.Text);
@@ -79,6 +81,30 @@ namespace Kinobuchungssystem.View
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void tb_Vorstellung_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tb_AnzahlPlaetze.Text) || string.IsNullOrEmpty(tb_Vorstellung.Text))
+            {
+                btn_Suchen.Enabled = false;
+            }
+            else
+            {
+                btn_Suchen.Enabled = true;
+            }
+        }
+
+        private void tb_AnzahlPlaetze_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tb_AnzahlPlaetze.Text) || string.IsNullOrEmpty(tb_Vorstellung.Text))
+            {
+                btn_Suchen.Enabled = false;
+            }
+            else
+            {
+                btn_Suchen.Enabled = true;
             }
         }
     }
