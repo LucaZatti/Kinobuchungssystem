@@ -8,20 +8,34 @@ namespace Kinobuchungssystem
 {
     public class Kinobesucher
     {
-        // properties for Kinobesucher
-        public int Telefonnummer { get; set; }
+        private string telefonnummer;
+        private string vorname;
+        private string nachname;
+
+        public Kinobesucher(string telefonnummer, string nachname, string vorname)
+        {
+            Telefonnummer = telefonnummer;
+            Vorname = vorname;
+            Nachname = nachname;
+        }
+
+        public void verwaltenKinobesucher(string telefonnummer, string vname, string nname)
+        {
+            if (telefonnummer != null)
+            {
+                Telefonnummer = telefonnummer;
+            }
+            if (vname != null)
+            {
+                Vorname = vname;
+            }
+            if (nname != null)
+            {
+                Nachname = nname;
+            }
+        }
+        public string Telefonnummer { get; set; }
         public string Vorname { get; set; }
         public string Nachname { get; set; }
-
-        public Kinobesucher()
-        {
-            
-        }
-
-        public void verwaltenKinobesucher()
-        {
-
-        }
-        
     }
 }

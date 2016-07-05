@@ -1,11 +1,4 @@
-﻿/**
- *  Author: 
- *  Date: 28.06.2016
- *  Version: 1
- *  Description: 
-*/
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,9 +8,16 @@ namespace Kinobuchungssystem
 {
     public class Platz
     {
-        private int platznummer;
-        private bool besetzt;
+        private string platznummer;
+        private string besetzt;
         private string telefonnummer;
+
+        public Platz(string platznummer, string besetzt, string kinobesuchertelefonnummer)
+        {
+            Platznummer = platznummer;
+            Besetzt = besetzt;
+            Telefonnummer = kinobesuchertelefonnummer;
+        }
 
         public void findenPlatz()
         {
@@ -33,8 +33,8 @@ namespace Kinobuchungssystem
         {
 
         }
-        public int Platznummer { get; set; }
-        public bool Besetzt { get; set; }
+        public string Platznummer { get; set; }
+        public string Besetzt { get; set; }
         public string Telefonnummer { get; set; }
     }
 }
