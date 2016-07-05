@@ -34,28 +34,28 @@ namespace Kinobuchungssystem
             // buttons and textboxes tab film
             btn_filmSuchen.Enabled = false;
             btn_filmSave.Enabled = false;
-            //tb_filmAltersfreigabe.Enabled = false;
-            //tb_filmBeschreibung.Enabled = false;
-            //tb_filmDauer.Enabled = false;
-            //tb_filmName.Enabled = false;
-            //tb_filmProduzent.Enabled = false;
-            //tb_filmGenre.Enabled = false;
+            tb_filmAltersfreigabe.Enabled = false;
+            tb_filmBeschreibung.Enabled = false;
+            tb_filmDauer.Enabled = false;
+            tb_filmName.Enabled = false;
+            tb_filmProduzent.Enabled = false;
+            tb_filmGenre.Enabled = false;
             // end
             // buttons and textboxes tab vorstellung
             btn_vorstellungSave.Enabled = false;
             btn_vorstellungSuchen.Enabled = false;
-            //tb_vorstellungDatum.Enabled = false;
-            //tb_vorstellungFilm.Enabled = false;
-            //tb_vorstellungKinosaal.Enabled = false;
-            //tb_vorstellungsnummer.Enabled = false;
-            //tb_vorstellungZeit.Enabled = false;
+            tb_vorstellungDatum.Enabled = false;
+            tb_vorstellungFilm.Enabled = false;
+            tb_vorstellungKinosaal.Enabled = false;
+            tb_vorstellungsnummer.Enabled = false;
+            tb_vorstellungZeit.Enabled = false;
             // end 
             // buttons and textboxes tab benutzer
             btn_benutzerSave.Enabled = false;
             btn_benutzerSuchen.Enabled = false;
-            //tb_benutzerNachname.Enabled = false;
-            //tb_benutzerTelefonnummerBenutzer.Enabled = false;
-            //tb_benutzerVorname.Enabled = false;
+            tb_benutzerNachname.Enabled = false;
+            tb_benutzerTelefonnummerBenutzer.Enabled = false;
+            tb_benutzerVorname.Enabled = false;
             // end
         }
 
