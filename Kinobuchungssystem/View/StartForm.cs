@@ -19,6 +19,7 @@ namespace Kinobuchungssystem
 {
     public partial class StartForm : Form
     {
+        Daten daten = new Daten();
         public StartForm()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace Kinobuchungssystem
         private void firstView_btn_Next_Click(object sender, EventArgs e)
         {
             // create new instance of class NavigationForm
-            NavigationForm navigationForm = new NavigationForm();
+            NavigationForm navigationForm = new NavigationForm(daten);
             this.Hide();
             // close current form and open new one
             navigationForm.Closed += (s, args) => this.Close();

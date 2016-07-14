@@ -8,33 +8,63 @@ namespace Kinobuchungssystem
 {
     public class Kinosaal
     {
-        private int kinosaalNummer;
+        private string kinosaalNummer;
         private int anzahlReihen;
         private int anzahlPlaetze;
-        private int[] reihen;
-
-        public Kinosaal()
+        private Reihe[] reihen;
+        private bool besetzt;
+        //Konstruktor der den Kinosaal erstellt
+        public Kinosaal(int nummer)
         {
-
+            reihen = new Reihe[5];
+            KinosaalNummer = nummer.ToString();
+            makeReihen();
         }
-
-        public void reservierenSaal()
+        //Methode die reihen erstellt
+        public void makeReihen()
         {
-
+            for (int i = 0; i < reihen.Length; i++)
+            {
+                if (reihen[i] == null)
+                {
+                    int x = i + 1;
+                    reihen[i] = new Reihe(x);
+                }
+            }
         }
-
-        public void reservierenPlatz()
+        //Gibt einen bestimmten Platz zurück in einer der Reihen
+        public Platz[] givePlatz(int nummer)
         {
-
+            Platz[] temp = null;
+            for (int i = 0; i < reihen.Length; i++)
+            {
+                if (reihen[i].Reihennummer.Equals(nummer))
+                {
+                    temp = reihen[i].givePlatz();
+                }
+                else
+                {
+                    temp = null;
+                }
+            }
+            return temp;
         }
-
-        public void suchenPlatz()
+        //Suche nach einer Reihe
+        public Reihe searchReihe(int reihennummer)
         {
-
+            for (int i = 0; i < reihen.Length; i++)
+            {
+                if (reihen[i].Reihennummer.Equals(reihennummer))
+                {
+                    return reihen[i];
+                }
+            }
+            return null;
         }
-        public int KinosaalNummer { get; set; }
+        public string KinosaalNummer { get; set; }
         public int AnzahlReihen { get; set; }
         public int AnzahlPlaetze { get; set; }
-        public int[] Reihen { get; set; }
+        public Reihe[] Reihen { get; set; }
+        public bool Besetzt { get; set; }
     }
 }

@@ -9,32 +9,28 @@ namespace Kinobuchungssystem
     public class Platz
     {
         private string platznummer;
-        private string besetzt;
+        private bool besetzt;
         private string telefonnummer;
-
-        public Platz(string platznummer, string besetzt, string kinobesuchertelefonnummer)
+        //Erstellt den Platz
+        public Platz(string platznummer, bool besetzt, string kinobesuchertelefonnummer)
         {
-            Platznummer = platznummer;
-            Besetzt = besetzt;
-            Telefonnummer = kinobesuchertelefonnummer;
+            this.platznummer = platznummer;
+            this.besetzt = besetzt;
+            telefonnummer = kinobesuchertelefonnummer;
+        }
+        //Reserviert den Platz
+        public void reservierenPlatz(string telenr)
+        {
+            besetzt = true;
+            telefonnummer = telenr;
         }
 
-        public void findenPlatz()
-        {
-
-        }
-
-        public void reservierenPlatz()
-        {
-
-        }
-
-        public void verwaltenPlatz()
+        public void verwaltenPlatz(string platznummer, bool besetzt, string kinobesuchertelefonnummer)
         {
 
         }
         public string Platznummer { get; set; }
-        public string Besetzt { get; set; }
+        public bool Besetzt { get; set; }
         public string Telefonnummer { get; set; }
     }
 }

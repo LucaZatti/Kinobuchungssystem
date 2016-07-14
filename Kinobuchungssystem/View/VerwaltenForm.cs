@@ -21,15 +21,11 @@ namespace Kinobuchungssystem
     public partial class VerwaltenForm : Form
     {
         // create instance of class
-        Vorstellung vorstellung = new Vorstellung();
-        Film film = new Film();
-        Kinobesucher kinobesucher = new Kinobesucher();
-
-        public VerwaltenForm()
+        Daten daten;
+        public VerwaltenForm(Daten daten)
         {
             InitializeComponent();
-            
-           
+            this.daten = daten;
             // disable buttons and textboxes
             // buttons and textboxes tab film
             btn_filmSuchen.Enabled = false;
@@ -69,6 +65,8 @@ namespace Kinobuchungssystem
             tb_benutzerTelefonnummerBenutzer.Enabled = true;
             tb_benutzerVorname.Enabled = true;
             string eingabe = btn_benutzerSuchen.Text;
+
+            this.daten.searchKinobesucher(tb_benutzerSuchen.Text);
         }
 
         private void tb_suchenBenutzer_TextChanged(object sender, EventArgs e)
@@ -93,9 +91,8 @@ namespace Kinobuchungssystem
         
         private void btn_saveBenutzer_Click(object sender, EventArgs e)
         {
-            kinobesucher.Vorname = tb_benutzerVorname.Text;
-            kinobesucher.Nachname = tb_benutzerNachname.Text;
-            kinobesucher.Telefonnummer = Int32.Parse(tb_benutzerTelefonnummerBenutzer.Text);
+            Kinobesucher besucher = new Kinobesucher(tb_benutzerTelefonnummerBenutzer.Text, tb_benutzerNachname.Text, tb_benutzerVorname.Text);
+            besucher.verwaltenKinobesucher(tb_benutzerTelefonnummerBenutzer.Text, tb_benutzerNachname.Text, tb_benutzerVorname.Text);
         }
 
         //--------------------------------------------------------------------------------------------------------------------------
@@ -109,9 +106,9 @@ namespace Kinobuchungssystem
             tb_filmName.Enabled = true;
             tb_filmProduzent.Enabled = true;
             btn_filmSave.Enabled = true;
-            film.Name = btn_filmSuchen.Text;
-            lb_film.Items.Add(film.Name);
             tb_filmSuchen.Text = "";
+
+            this.daten.searchFilm(tb_filmSuchen.Text);
         }
 
         private void tb_suchenFilm_TextChanged(object sender, EventArgs e)
@@ -122,12 +119,6 @@ namespace Kinobuchungssystem
 
         private void btn_saveFilm_Click(object sender, EventArgs e)
         {
-            film.Altersfreigabe = Int32.Parse(tb_filmAltersfreigabe.Text);
-            film.Beschreibung = tb_filmBeschreibung.Text;
-            film.Dauer = Int32.Parse(tb_filmDauer.Text);
-            film.Genre = tb_filmGenre.Text;
-            film.Name = tb_filmName.Text;
-            film.Produzent = tb_filmProduzent.Text;
 
             // clear all textboxes in form
             tb_filmAltersfreigabe.Text = "";
@@ -148,8 +139,7 @@ namespace Kinobuchungssystem
             tb_vorstellungsnummer.Enabled = true;
             tb_vorstellungZeit.Enabled = true;
 
-            vorstellung.Filmname = tb_vorstellungSuchen.Text;
-            lb_vorstellung.Items.Add(vorstellung.Filmname);
+            this.daten.searchVorstellung(Int32.Parse(tb_filmSuchen.Text));
         }
 
         private void tb_suchenVorstellung_TextChanged(object sender, EventArgs e)
@@ -161,11 +151,8 @@ namespace Kinobuchungssystem
         private void btn_saveVorstellung_Click(object sender, EventArgs e)
         {
             // fill properties with new data
-            vorstellung.Datum = tb_vorstellungDatum.Text;
-            vorstellung.Filmname = tb_vorstellungFilm.Text;
-            vorstellung.Saalnummer = Int32.Parse(tb_vorstellungKinosaal.Text);
-            vorstellung.Vorstellungsnummer = Int32.Parse(tb_vorstellungsnummer.Text);
-            vorstellung.Zeit = tb_vorstellungZeit.Text;
+            Vorstellung vorstellung = new Kinobuchungssystem.Vorstellung(tb_vorstellungsnummer.Text, tb_vorstellungKinosaal.Text, tb_vorstellungFilm.Text, tb_vorstellungDatum.Text, tb_vorstellungZeit.Text);
+            vorstellung.verwaltenFilm(Int32.Parse(tb_vorstellungsnummer.Text), Int32.Parse(tb_vorstellungZeit.Text), tb_vorstellungKinosaal.Text, tb_vorstellungFilm.Text);
         }
 
         private void tb_vorstellungsnummer_KeyPress(object sender, KeyPressEventArgs e)
@@ -201,7 +188,7 @@ namespace Kinobuchungssystem
         private void btn_zurueck_Click(object sender, EventArgs e)
         {
             // create new instance of class NavigationForm
-            NavigationForm navigationForm = new NavigationForm();
+            NavigationForm navigationForm = new NavigationForm(this.daten);
             this.Hide();
             // close current form and open new one
             navigationForm.Closed += (s, args) => this.Close();

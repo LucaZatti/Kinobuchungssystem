@@ -11,14 +11,14 @@ namespace Kinobuchungssystem
         private string telefonnummer;
         private string vorname;
         private string nachname;
-
+        //Erstellt den Kinobesucher
         public Kinobesucher(string telefonnummer, string nachname, string vorname)
         {
             Telefonnummer = telefonnummer;
             Vorname = vorname;
             Nachname = nachname;
         }
-
+        //Verwaltet den Kinobesucher
         public void verwaltenKinobesucher(string telefonnummer, string vname, string nname)
         {
             if (telefonnummer != null)
@@ -34,6 +34,7 @@ namespace Kinobuchungssystem
                 Nachname = nname;
             }
         }
+        //Properties
         public string Telefonnummer { get; set; }
         public string Vorname { get; set; }
         public string Nachname { get; set; }

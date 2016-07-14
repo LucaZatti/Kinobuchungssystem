@@ -22,14 +22,16 @@ namespace Kinobuchungssystem
 {
     public partial class NavigationForm : Form
     {
-        public NavigationForm()
+        Daten daten;
+        public NavigationForm(Daten daten)
         {
             InitializeComponent();
+            this.daten = daten;
         }
 
         private void NavigationForm_btn_verwalten_Click(object sender, EventArgs e)
         {
-            VerwaltenForm verwaltenForm = new VerwaltenForm();
+            VerwaltenForm verwaltenForm = new VerwaltenForm(this.daten);
             this.Hide(); 
             // close current form and open new one
             verwaltenForm.Closed += (s, args) => this.Close();
@@ -39,7 +41,7 @@ namespace Kinobuchungssystem
         private void NavigationForm_btn_reservieren_Click(object sender, EventArgs e)
         {
             // create new instance of class NavigationForm
-            ReservierenForm reservierenForm = new ReservierenForm();
+            ReservierenForm reservierenForm = new ReservierenForm(this.daten);
             this.Hide();
             // close current form and open new one
             reservierenForm.Closed += (s, args) => this.Close();
@@ -49,7 +51,7 @@ namespace Kinobuchungssystem
         private void btn_neu_Click(object sender, EventArgs e)
         {
             // create new instance of class NavigationForm
-            NeuForm neuForm = new NeuForm();
+            NeuForm neuForm = new NeuForm(this.daten);
             this.Hide();
             // close current form and open new one
             neuForm.Closed += (s, args) => this.Close();

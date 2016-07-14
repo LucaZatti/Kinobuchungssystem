@@ -12,9 +12,11 @@ namespace Kinobuchungssystem.View
 {
     public partial class ReservierenForm : Form
     {
-        public ReservierenForm()
+        Daten daten;
+        public ReservierenForm(Daten daten)
         {
             InitializeComponent();
+            this.daten = daten;
             btn_Reservieren.Enabled = false;
             btn_Suchen.Enabled = false;
             cb_FreiePlaetze.Enabled = false;
@@ -25,29 +27,20 @@ namespace Kinobuchungssystem.View
         {
             cb_FreiePlaetze.Enabled = true;
             // get input text 
-            string vorstellung = tb_Vorstellung.Text;
-            int anzahlPlaetze = int.Parse(tb_AnzahlPlaetze.Text);
-
-            MessageBox.Show(vorstellung + anzahlPlaetze);
+            this.daten.searchVorstellung(Int32.Parse(tb_Vorstellung.Text));
         }
 
         private void btn_Reservieren_Click(object sender, EventArgs e)
         {
             // get input text
-            string vorname = tb_Vorname.Text;
-            string nachname = tb_Nachname.Text;
-            int telefonnummer = int.Parse(tb_Telefonnummer.Text);
-
-            MessageBox.Show(vorname + " " + nachname + " " + telefonnummer);
-
-            
+            this.daten.createKinobesucher(tb_Telefonnummer.Text, tb_Nachname.Text, tb_Vorname.Text);
         }
 
         // Press button zurück
         private void btn_zurück_Click(object sender, EventArgs e)
         {
             // create new instance of class NavigationForm
-            NavigationForm navigationForm = new NavigationForm();
+            NavigationForm navigationForm = new NavigationForm(this.daten);
             this.Hide();
             // close current form and open new one
             navigationForm.Closed += (s, args) => this.Close();
